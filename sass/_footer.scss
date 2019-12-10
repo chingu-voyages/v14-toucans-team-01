@@ -1,0 +1,27 @@
+
+@media(max-width: 480px) {
+
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 1440px ) {
+
+  .footer {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+  }
+
+  .infos {
+    margin-right: 20px;
+  }
+
+  .social {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+  }
+}

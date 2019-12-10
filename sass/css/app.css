@@ -1,3 +1,35 @@
+@media (max-width: 1440px) {
+  nav {
+    display: flex; }
 
+  h4 {
+    margin-right: 300px; }
+
+  .links-container {
+    list-style: none;
+    display: flex; }
+
+  .links-container li {
+    text-align: center;
+    margin-right: 15px; }
+
+  .links-container li a {
+    text-decoration: none; }
+
+  .links {
+    margin-right: 10px; } }
+@media (max-width: 1440px) {
+  .footer {
+    list-style: none;
+    font-size: 20px;
+    display: flex; }
+
+  .infos {
+    margin-right: 20px; }
+
+  .social {
+    display: flex;
+    list-style: none;
+    font-size: 20px; } }
 
 /*# sourceMappingURL=app.css.map */
