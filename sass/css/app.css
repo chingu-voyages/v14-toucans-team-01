@@ -6,7 +6,8 @@
 @media (min-width: 320px) {
   .nav-bar {
     width: calc(100% * 0.7);
-    text-align: right; } }
+    text-align: right;
+    padding-top: 15px; } }
 @media (min-width: 768px) {
   .nav-bar {
     margin-top: 20px; } }
@@ -36,7 +37,7 @@
     width: 25px;
     /*長さ*/
     border-radius: 3px;
-    background: #555;
+    background: darkred;
     display: block;
     content: '';
     cursor: pointer; } }
@@ -62,29 +63,29 @@
     opacity: 0;
     transition: .3s ease-in-out; } }
 
-@media (min-width: 320px) {
-  #nav-content {
-    overflow: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    /*最前面に*/
-    width: 60%;
-    /*右側に隙間を作る（閉じるカバーを表示）*/
-    max-width: 330px;
-    /*最大幅（調整してください）*/
-    height: 100%;
-    background: #fff;
-    /*背景色*/
-    transition: .3s ease-in-out;
-    /*滑らかに表示*/
-    -webkit-transform: translateX(-105%);
-    transform: translateX(-105%);
-    /*左に隠しておく*/ } }
-@media (min-width: 768px) {
-  #nav-content {
-    display: contents; } }
+#nav-content {
+  background: orange; }
+  @media (min-width: 320px) {
+    #nav-content {
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      /*最前面に*/
+      width: 60%;
+      /*右側に隙間を作る（閉じるカバーを表示）*/
+      max-width: 330px;
+      /*最大幅（調整してください）*/
+      height: 100%;
+      transition: .3s ease-in-out;
+      /*滑らかに表示*/
+      -webkit-transform: translateX(-105%);
+      transform: translateX(-105%);
+      /*左に隠しておく*/ } }
+  @media (min-width: 768px) {
+    #nav-content {
+      display: contents; } }
 
 /*チェックが入ったらもろもろ表示*/
 @media (min-width: 320px) {
@@ -108,13 +109,24 @@
     margin-left: 40px; } }
 
 @media (min-width: 320px) {
-  .links-container {
-    list-style: none; } }
+  .nav-close-btn {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 25px; } }
 @media (min-width: 768px) {
-  .links-container {
-    display: flex;
-    margin: 0;
-    padding: 5px; } }
+  .nav-close-btn {
+    display: none; } }
+
+.links-container {
+  padding: 0; }
+  @media (min-width: 320px) {
+    .links-container {
+      list-style: none; } }
+  @media (min-width: 768px) {
+    .links-container {
+      display: flex;
+      margin: 0;
+      padding: 5px; } }
 
 @media (min-width: 320px) {
   .links-container li {
@@ -169,5 +181,30 @@
     display: flex;
     list-style: none;
     font-size: 20px; } }
+
+.twitter-icon {
+  font-size: 35px;
+  color: #55acee;
+  margin-left: 10px; }
+
+.facebook-icon {
+  font-size: 35px;
+  color: #315096;
+  margin-left: 10px; }
+
+.insta-icon {
+  /*アイコンの背景*/
+  font-size: 35px;
+  color: black;
+  margin-left: 10px; }
+
+.pinterest-icon {
+  font-size: 35px;
+  color: #ce0f19;
+  margin-left: 10px; }
+
+body {
+  margin: 0;
+  padding: 5px; }
 
 /*# sourceMappingURL=app.css.map */

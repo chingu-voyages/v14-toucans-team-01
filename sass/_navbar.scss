@@ -20,6 +20,7 @@ $lg: 1024px;
   }
 }
   nav {
+    // background: orange;
     @include sm {
     display: flex;
     }
@@ -29,6 +30,7 @@ $lg: 1024px;
     @include sm {
       width: calc(100% * 0.7);
       text-align: right;
+      padding-top: 15px;
     }
     @include md {
       margin-top: 20px;
@@ -63,7 +65,7 @@ $lg: 1024px;
     height: 3px;/*線の太さ*/
     width: 25px;/*長さ*/
     border-radius: 3px;
-    background: #555;
+    background: darkred;
     display: block;
     content: '';
     cursor: pointer;
@@ -81,6 +83,7 @@ $lg: 1024px;
     bottom: -16px;
     }
   }
+
   #nav-close {
     @include sm {
     display: none;
@@ -98,6 +101,7 @@ $lg: 1024px;
   
  
   #nav-content {
+    background: orange;
     @include sm {
     overflow: auto;
     position: fixed;
@@ -107,7 +111,7 @@ $lg: 1024px;
     width: 60%;/*右側に隙間を作る（閉じるカバーを表示）*/
     max-width: 330px;/*最大幅（調整してください）*/
     height: 100%;
-    background: #fff;/*背景色*/
+    
     transition: .3s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);/*左に隠しておく*/
@@ -142,7 +146,19 @@ $lg: 1024px;
     }
   }
 
+  .nav-close-btn {
+    @include sm {
+      padding-left: 20px;
+      text-align: left;
+      font-size: 25px;
+    }
+    @include md {
+      display: none;
+    }
+  }
+
   .links-container {
+    padding: 0;
     @include sm {
     list-style: none;
     }
