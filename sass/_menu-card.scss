@@ -1,10 +1,60 @@
-@media(max-width: 480px) {
+$sm: 320px;
+$md: 768px;
+$lg: 1024px;
 
+@mixin sm {
+  @media (min-width: ($sm)) {
+    @content;
+  }
 }
 
-@media(max-width: 768px) {
-
+@mixin md {
+  @media (min-width: ($md)) {
+    @content;
+  }
 }
 
-@media(max-width: 1440px ) {
+@mixin lg {
+  @media (min-width: ($lg)) {
+    @content;
+  }
+}
+
+.image {
+  @include sm {
+    width: 80px;
+    height: 80px;      /* ※縦横を同値に */ 
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */ 
+    background-position: left top;  /* 横長画像の左上を基準に表示 */ 
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+    border: solid 1px lightgray; 
+  }
+  @include lg {
+    // width:  180px;       /* ※縦横を同値に */ 
+    // height: 180px;       /* ※縦横を同値に */ 
+    // border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */ 
+    // background-position: left top;  /* 横長画像の左上を基準に表示 */ 
+    // margin-bottom: 10px;
+    // box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+    // border: solid 1px lightgray; 
+  }
+} 
+
+.image-space {
+  @include sm {
+    margin-right: 10px;
+  }
+  @include lg {
+    margin-right: 30px;
+  } 
+} 
+
+.menu-card {
+  display: flex; 
+} 
+
+.food-head {
+  text-align: center;
+  font-size: 13px;
 }

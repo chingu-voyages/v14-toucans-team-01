@@ -20,15 +20,24 @@ $lg: 1024px;
   }
 }
   nav {
-    // background: orange;
+    background: #f5b031;
     @include sm {
     display: flex;
     }
   }
 
+  .logo-image {
+    @include sm {
+      width: 200px;
+    }
+    @include md {
+      width: 300px;
+    }
+  }
+
   .nav-bar {
     @include sm {
-      width: calc(100% * 0.7);
+      margin: 0 40px 0 20px;
       text-align: right;
       padding-top: 15px;
     }
@@ -54,9 +63,6 @@ $lg: 1024px;
     vertical-align: middle;
     }
 
-    @include md {
-      display: none;
-    }
   }
 
   #nav-open span, #nav-open span:before, #nav-open span:after {
@@ -99,7 +105,6 @@ $lg: 1024px;
     }
   }
   
- 
   #nav-content {
     background: orange;
     @include sm {
@@ -108,16 +113,15 @@ $lg: 1024px;
     top: 0;
     left: 0;
     z-index: 9999;/*最前面に*/
-    width: 60%;/*右側に隙間を作る（閉じるカバーを表示）*/
+    width: 40%;/*右側に隙間を作る（閉じるカバーを表示）*/
     max-width: 330px;/*最大幅（調整してください）*/
     height: 100%;
-    
     transition: .3s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);/*左に隠しておく*/
     }
     @include md {
-      display: contents;
+      // display: contents;
     }
   }
   
@@ -153,7 +157,7 @@ $lg: 1024px;
       font-size: 25px;
     }
     @include md {
-      display: none;
+      // display: none;
     }
   }
 
@@ -163,7 +167,6 @@ $lg: 1024px;
     list-style: none;
     }
     @include md {
-      display: flex;
       margin: 0;
       padding: 5px;
     }
