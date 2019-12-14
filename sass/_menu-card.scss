@@ -41,6 +41,10 @@ $lg: 1024px;
   }
 } 
 
+.image:hover {
+  opacity: 0.5;
+}
+
 .image-space {
   @include sm {
     margin-right: 10px;

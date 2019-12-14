@@ -74,7 +74,7 @@
   left: 0;
   z-index: 9999;
   /*最前面に*/
-  width: 90%;
+  width: 60%;
   /*右側に隙間を作る（閉じるカバーを表示）*/
   max-width: 330px;
   /*最大幅（調整してください）*/
@@ -149,6 +149,9 @@
     margin: 40px 20px 20px 0;
     font-size: 18px; } }
 
+.links-container li:hover {
+  opacity: 0.5; }
+
 @media (min-width: 320px) {
   .links-container li a {
     text-decoration: none; } }
@@ -172,6 +175,9 @@
     margin-bottom: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     border: solid 1px lightgray; } }
+
+.image:hover {
+  opacity: 0.5; }
 
 @media (min-width: 320px) {
   .image-space {
@@ -247,6 +253,41 @@
 
 .footer-menu {
   text-align: center; }
+
+h2 {
+  text-align: center;
+  text-decoration: underline dashed #f4a460;
+  color: #f4a460; }
+
+p {
+  margin: 10px 0 5px 0; }
+
+.contact {
+  text-align: left; }
+
+.btn {
+  border: solid 2px #f4a460;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-family: 'Courier';
+  font-size: 20px;
+  background: #f4a460;
+  color: tomato; }
+
+.btn:hover {
+  opacity: 0.5%; }
+
+.btn-p {
+  text-align: center;
+  border-radius: 80%; }
+
+.input-text {
+  border: solid 2px lightgray;
+  width: -webkit-fill-available; }
+  @media (min-width: 320px) {
+    .input-text {
+      font-size: 25px; } }
 
 body {
   margin: 0;

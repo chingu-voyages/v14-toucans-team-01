@@ -1,0 +1,35 @@
+p {
+  margin: 10px 0 5px 0;
+}
+
+.contact {
+  text-align: left;
+}
+
+.btn {
+  border: solid 2px #f4a460;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-family: 'Courier';
+  font-size: 20px;
+  background: #f4a460;
+  color: tomato;
+}
+
+.btn:hover {
+  opacity: 0.5%;
+}
+
+.btn-p {
+  text-align: center;
+  border-radius: 80%;
+}
+
+.input-text {
+  border: solid 2px lightgray;
+  width: -webkit-fill-available;
+  @include sm {
+    font-size: 25px;
+  }
+}
