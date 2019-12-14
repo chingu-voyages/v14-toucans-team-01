@@ -15,6 +15,7 @@
 				<div class="nav-bar">
 					<input id="nav-input" type="checkbox" class="nav-unshown">
 					<label id="nav-open" for="nav-input"><span></span></label>
+					<img src="./images/logo.png" class="logo-image">
 					<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 					<div id="nav-content">
 							<ul class="links-container">
@@ -28,19 +29,29 @@
 							</ul>
 					</div>
 				</div>
-				<a href="index.html">
-					<h4 class="logo"><img src="./images/logo.png" class="logo-image"></h4>
-				</a>
+				<ul class="links-container desktop-menu">
+					<div class="nav-close-btn">&times;</div>
+					<li class="links">About Us</li>
+					<li class="links">Products</li>
+					<li class="links">Pricing</li>
+					<li class="links">Solutions</li>
+					<li class="links">Support</li>
+					<li class="links">Contact</li>
+					<a href="index.html">
+							<h4 class="logo"><img src="./images/logo.png" class="logo-image-lg"></h4>
+						</a>
+				</ul>
+					
 			</nav>
 			<div class="title">
 				<!-- We can put a carousel in the background of the header -->
 				<h1>Toucan's Recipes</h1>
 			</div>
 			<div class="search-container">
-				<!-- <form action="#" method="get">
+				<form action="#" method="get">
 					<label for="search-input"></label>
 					<input type="search" id="search-input" class="search-input" placeholder="Search...">
-				</form> -->
+				</form>
 			</div>
 		</header>
 			<div class="menu-card">
@@ -88,11 +99,13 @@
 				-->
 			</div>
 			<footer>
-				<ul class="footer">
-						<li class="infos">About us</li>
-						<li class="infos">Nutriscore</li>
-						<li class="infos">Contact</li>
-				</ul>
+				<div class="footer-menu">
+					<ul class="footer">
+							<li class="infos">About us</li>
+							<li class="infos">Nutriscore</li>
+							<li class="infos">Contact</li>
+					</ul>
+				</div>
 				<ul class="social network">
 					<li class="social"><i class="fab fa-facebook facebook-icon"></i></li>
 					<li class="social"><i class="fab fa-twitter twitter-icon"></i></li>
