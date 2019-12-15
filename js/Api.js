@@ -2,7 +2,7 @@
 const BASE_API_URL = 'https://api.spoonacular.com/';
 const API_KEY = '046d215a9f344c39ad5e3bf194063388';
 
-async function request(requestURL, searchType, requestParams, requestMethod = 'GET') {
+async function requestAPI(requestURL, searchType, requestParams, requestMethod = 'GET') {
 
     // create URL object and add the search type to the base URL
     let query_url = new URL(requestURL + searchType);
@@ -18,8 +18,8 @@ async function request(requestURL, searchType, requestParams, requestMethod = 'G
     };
 
     // because fetch returns a promise, we add a keyword to wait until the promise is returned
-    const response = await fetch(query_url);
-    const result = await response.json(); //convert response into JSON
+    let response = await fetch(query_url);
+    let result = await response.json(); //convert response into JSON
 
     return result; // return the result
 };
