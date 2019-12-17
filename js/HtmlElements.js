@@ -19,6 +19,4 @@ class HtmlElements{
     newElement(){
         return this.createElements();
     }
-
-    linksSource
 }

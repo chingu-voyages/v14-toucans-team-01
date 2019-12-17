@@ -1,5 +1,6 @@
 
 const navbar = document.querySelector(".desktop-menu");
+const header = document.querySelector(".header");
 const linkName = [
     {
         nameTag: "About Us",
@@ -35,3 +36,31 @@ const createMenu = (list) =>{
         }, links, list[i].nameTag).newElement();
     }
 };
+
+const createTitle = () =>{
+    const titleDiv = new HtmlElements("div", {"class": "title"}, header).newElement();
+    const titleLink = new HtmlElements("a", {"href": "index.html"}, titleDiv)
+        .newElement();
+    const headerSize = new HtmlElements("h1", {"class" : ""}, titleLink, "Toucan's Recipes")
+        .newElement() 
+}
+
+const createSearchForm = () =>{
+    const searcContainer = new HtmlElements("div", {"class": "search-container"}, header). newElement();
+    const form = new HtmlElements("form", {"action" : "#", "method" : "get"}, searcContainer).newElement();;
+    const label = new HtmlElements("label", {"for": "search-input"},form).newElement();
+    const inputSearch = new HtmlElements("input", 
+        {
+            "type": "search",
+            "id" : "search-input",
+            "class" : "search-input",
+            "placeholder": "Search..."
+        }, form).newElement();
+    const btn = new HtmlElements("button", 
+        {
+            "type": "submit",
+            "class": "search-submit"
+        }, form).newElement();
+
+    const logoSearch = new HtmlElements("i",{"class": "fas fa-search"}, btn).newElement();
+}
