@@ -12,3 +12,16 @@
 .search-container {
   text-align: center;
 }
+
+.search-input {
+  border: solid 2px lightgray;
+  margin: 20px 0 20px 0;
+  border-radius:2px 0 0 2px;
+  width: 200px;
+  height: 30px;
+}
+
+.search-submit {
+  background: lightgray;
+  height: 30px;
+}

@@ -55,10 +55,77 @@ $lg: 1024px;
 } 
 
 .menu-card {
-  display: flex; 
+  display: flex;
+
+  @include md {
+    width: 500px;
+    padding: 0 100px;
+  }
+
+  @include lg {
+    width: 600px;
+    padding: 0 180px;
+  }
 } 
 
 .food-head {
   text-align: center;
   font-size: 13px;
+}
+
+.random-menu-disp {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include lg {
+    margin: 0 70px;
+  }
+}
+.random-menu-card {
+
+  @include sm {
+    margin: 20px 50px;
+  }
+  @include md {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+  }
+  @include lg {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+  }
+}
+
+.card-img {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  border: solid 2px olive;
+  @include sm {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+  }
+  @include lg {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.card-info-container {
+  @include sm {
+    width: 150px;
+    height: 130px;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); */
+    text-shadow: 1px 1px 0 #000;
+    font-size: 20px;
+  }
+  @include lg {
+    width: 200px;
+    height: 200px;
+  }
 }

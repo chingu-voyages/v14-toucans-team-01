@@ -20,6 +20,15 @@ $lg: 1024px;
   }
 }
 
+.title {
+  @include sm {
+    font-size: 13px;
+  }
+  @include md {
+    font-size: 20px;
+  }
+}
+
 .nav-bar {
   @include sm {
     display: flex;
@@ -31,15 +40,22 @@ $lg: 1024px;
     width: 200px;
     margin-left: 30px;
   }
+  // @include md {
+  //   width: 300px;
+  //   margin-left: 200px;
+  // }
   @include md {
-    width: 300px;
-    margin-left: 200px;
-  }
-  @include lg {
     display: none;
   }
 }
 
+.logo-image-lg {
+
+  @include md {
+    width: 200px;
+  }
+  
+}
 #nav-drawer {
   position: relative;
 }
@@ -56,7 +72,7 @@ $lg: 1024px;
   height: 22px;
   vertical-align: middle;
 
-  @include lg {
+  @include md {
     display: none;
   }
 }
@@ -125,7 +141,7 @@ $lg: 1024px;
   @include sm {
     display: none;
   }
-  @include lg {
+  @include md {
     display: inline-block;
   }
 }
@@ -134,8 +150,9 @@ $lg: 1024px;
     @include sm {
       width: 280px;
     }
+
     @include md {
-      margin-left: 40px;
+      width: 200px;
     }
   }
 
@@ -145,7 +162,7 @@ $lg: 1024px;
       text-align: left;
       font-size: 25px;
     }
-    @include lg {
+    @include md {
       display: none;
     }
   }
@@ -155,29 +172,34 @@ $lg: 1024px;
     @include sm {
     list-style: none;
     }
+    // @include md {
+    //   margin: 0;
+    //   padding: 5px;
+    // }
     @include md {
-      margin: 0;
-      padding: 5px;
-    }
-    @include lg {
       display: flex;
     }
     
   }
 
   .links-container li {
+    color: #f4a460;
     @include sm {
     text-align: center; 
     margin: 20px 30px 20px 0;
     text-align: right;
     }
+    // @include md {
+    //   margin: 40px 30px 20px 0;
+    //   font-size: 20px;
+    // }
     @include md {
-      margin: 40px 30px 20px 0;
-      font-size: 20px;
+      margin: 40px 10px 0 0;
+      font-size: 16px;
     }
+
     @include lg {
-      margin: 40px 20px 20px 0;
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
@@ -185,8 +207,13 @@ $lg: 1024px;
     opacity: 0.5;
   }
   .links-container li a {
+    color: #f4a460;
     @include sm {
     text-decoration: none;
+    }
+
+    @include md {
+      text-decoration: underline dashed #f4a460;
     }
   }
 
