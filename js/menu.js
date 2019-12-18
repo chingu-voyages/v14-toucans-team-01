@@ -4,15 +4,15 @@ const header = document.querySelector(".header");
 const linkName = [
     {
         nameTag: "About Us",
-        link:"./_contact.html"
+        link:"./_aboutus.html"
     },
     {
         nameTag: "Appetizers",
-        link: "./appetizer.html"
+        link: "./_appetizer.html"
     },
     {
         nameTag: "Entrees",
-        link : "./_entree.html"
+        link : "./_entrees.html"
     },
     {
         nameTag: "Main courses",
@@ -28,6 +28,12 @@ const linkName = [
     }];
 
 const createMenu = (list) =>{
+    const logoSiteLink = new HtmlElements("a", {"href" : "index.html"}, navbar).newElement();
+    const logoSite = new HtmlElements("h4",{"class": "logo"}, logoSiteLink).newElement();
+    const logoImg = new HtmlElements("img", {
+        "src": "./images/logo.png",
+        "class": "logo-image-lg"
+    }, logoSite).newElement();
     for(let i = 0; i<list.length; i++){
         const links = new HtmlElements("li", {"class" : "links"}, navbar)
             .newElement();
@@ -35,6 +41,7 @@ const createMenu = (list) =>{
             "href": list[i].link
         }, links, list[i].nameTag).newElement();
     }
+
 };
 
 const createTitle = () =>{
@@ -43,7 +50,7 @@ const createTitle = () =>{
         .newElement();
     const headerSize = new HtmlElements("h1", {"class" : ""}, titleLink, "Toucan's Recipes")
         .newElement() 
-}
+};
 
 const createSearchForm = () =>{
     const searcContainer = new HtmlElements("div", {"class": "search-container"}, header). newElement();
