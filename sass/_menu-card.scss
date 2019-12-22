@@ -1,10 +1,131 @@
-@media(max-width: 480px) {
+$sm: 320px;
+$md: 768px;
+$lg: 1024px;
 
+@mixin sm {
+  @media (min-width: ($sm)) {
+    @content;
+  }
 }
 
-@media(max-width: 768px) {
-
+@mixin md {
+  @media (min-width: ($md)) {
+    @content;
+  }
 }
 
-@media(max-width: 1440px ) {
+@mixin lg {
+  @media (min-width: ($lg)) {
+    @content;
+  }
+}
+
+.image {
+  @include sm {
+    width: 80px;
+    height: 80px;      /* ※縦横を同値に */ 
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */ 
+    background-position: left top;  /* 横長画像の左上を基準に表示 */ 
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+    border: solid 1px lightgray; 
+  }
+  @include lg {
+    // width:  180px;       /* ※縦横を同値に */ 
+    // height: 180px;       /* ※縦横を同値に */ 
+    // border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */ 
+    // background-position: left top;  /* 横長画像の左上を基準に表示 */ 
+    // margin-bottom: 10px;
+    // box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+    // border: solid 1px lightgray; 
+  }
+} 
+
+.image:hover {
+  opacity: 0.5;
+}
+
+.image-space {
+  @include sm {
+    margin-right: 10px;
+  }
+  @include lg {
+    margin-right: 30px;
+  } 
+} 
+
+.menu-card {
+  display: flex;
+
+  @include md {
+    width: 500px;
+    padding: 0 100px;
+  }
+
+  @include lg {
+    width: 600px;
+    padding: 0 180px;
+  }
+} 
+
+.food-head {
+  text-align: center;
+  font-size: 13px;
+}
+
+.random-menu-disp {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include lg {
+    margin: 0 70px;
+  }
+}
+.random-menu-card {
+
+  @include sm {
+    margin: 20px 50px;
+  }
+  @include md {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+  }
+  @include lg {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+  }
+}
+
+.card-img {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  border: solid 2px olive;
+  @include sm {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+  }
+  @include lg {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.card-info-container {
+  @include sm {
+    width: 150px;
+    height: 130px;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); */
+    text-shadow: 1px 1px 0 #000;
+    font-size: 20px;
+  }
+  @include lg {
+    width: 200px;
+    height: 200px;
+  }
 }

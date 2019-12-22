@@ -26,6 +26,7 @@ $lg: 1024px;
   font-size: 13px;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
   }
   
   @include md {
@@ -47,6 +48,18 @@ $lg: 1024px;
   }
 }
 
+.sns {
+  display: flex;
+
+  @include md {
+    width: 180px;
+    padding: 0 200px 0 250px;
+  }
+
+  @include lg {
+    padding: 0 200px 0 400px;
+  }
+}
 .social {
   @include sm {
     display: flex;
@@ -57,7 +70,7 @@ $lg: 1024px;
   @include md {
     display: flex;
     list-style: none;
-    font-size: 20px;
+    font-size: 20px;  
   }
   
   @include lg {
@@ -89,4 +102,8 @@ $lg: 1024px;
   font-size: 35px; 
   color: #ce0f19; 
   margin-left: 10px;     
+}
+
+.footer-menu {
+  text-align: center;
 }

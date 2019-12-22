@@ -1,0 +1,83 @@
+<!-- All the comments are for implementing with js. But we can uncomment the time to create our sass file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>ChinguRecipes</title>
+	<link rel="stylesheet" type="text/css" href="./sass/css/app.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<nav>
+				<div class="nav-bar">
+					<input id="nav-input" type="checkbox" class="nav-unshown">
+					<label id="nav-open" for="nav-input"><span></span></label>
+					<a href="index.html"><img src="./images/logo.png" class="logo-image"></a>
+					<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+					<div id="nav-content">
+							<ul class="links-container">
+								<div class="nav-close-btn">&times;</div>
+								<li class="links">About Us</li>
+								<li class="links"><a href="_entrees.html">Products</a></li>
+								<li class="links"><a href="_appetizer.html">Pricing</a></li>
+								<li class="links"><a href="_dessert.html">Solutions</a></li>
+								<li class="links"><a href="_wine.html">Support</a></li>
+								<li class="links"><a href="_contact.html">Contact</a></li>
+							</ul>
+					</div>
+				</div>
+				<ul class="links-container desktop-menu">
+					<div class="nav-close-btn">&times;</div>
+					<li class="links">About Us</li>
+					<li class="links"><a href="_entrees.html">Products</a></li>
+          <li class="links"><a href="_appetizer.html">Pricing</a></li>
+          <li class="links"><a href="_dessert.html">Solutions</a></li>
+          <li class="links"><a href="_wine.html">Support</a></li>
+          <li class="links"><a href="_contact.html">Contact</a></li>
+					<a href="index.html">
+							<h4 class="logo"><img src="./images/logo.png" class="logo-image-lg"></h4>
+						</a>
+				</ul>
+					
+			</nav>
+			<div class="title">
+				<!-- We can put a carousel in the background of the header -->
+				<a href="index.html"><h1>Toucan's Recipes</h1></a>
+      </div>
+		</header>
+			<h2>Contact</h2>
+			<div class="contact">
+				<form method="post">
+					<p><label for="name" class="input-label">*Name: </label></p>
+					<p><input type="text" name="name" class="input-text"/></p>
+					<p><label for="e-mail" class="input-label">*E-mail: </label></p>
+					<p><input type="text" name="e-mail" class="input-text"/></p>
+					<p><label for="message" class="input-label">*Message: </label></p>
+					<p><textarea name="message" class="input-text" cols="250" rows="5"></textarea></p>
+					<p class="btn-p"><button type="submit" class="btn"><i class="fas fa-forward"></i> Send</button></p>
+				</form>
+      </div>
+			<footer>
+				<!-- <div class="footer-menu">
+					<ul class="footer">
+							<li class="infos">About us</li>
+							<li class="infos">Nutriscore</li>
+							<li class="infos">Contact</li>
+					</ul>
+				</div> -->
+				<ul class="social network">
+					<li class="social"><i class="fab fa-facebook facebook-icon"></i></li>
+					<li class="social"><i class="fab fa-twitter twitter-icon"></i></li>
+					<li class="social"><i class="fab fa-instagram insta-icon"></i></li>
+					<li class="social"><i class="fab fa-pinterest pinterest-icon"></i></li>
+				</ul>
+			</footer>
+	</div>
+	<script src="js/script.js"></script>
+	<script src="js/HtmlElements.js"></script>
+	<script src="js/Api.js"></script>
+</body>
+</html>
