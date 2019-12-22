@@ -53,20 +53,22 @@ const createTitle = () =>{
 };
 
 const createSearchForm = () =>{
-    const searcContainer = new HtmlElements("div", {"class": "search-container"}, header). newElement();
-    const form = new HtmlElements("form", {"action" : "#", "method" : "get"}, searcContainer).newElement();;
+    const searchContainer = new HtmlElements("div", {"class": "search-container"}, header).newElement();
+    const form = new HtmlElements("form", {"id" : "recipe-search", "action" : "_searchresult.html", "method" : "get"}, searchContainer).newElement();
     const label = new HtmlElements("label", {"for": "search-input"},form).newElement();
     const inputSearch = new HtmlElements("input", 
         {
-            "type": "search",
+            "type": "text",
             "id" : "search-input",
             "class" : "search-input",
-            "placeholder": "Search..."
+            "placeholder": "Search...",
+            "name": "recipeName"
         }, form).newElement();
     const btn = new HtmlElements("button", 
         {
             "type": "submit",
-            "class": "search-submit"
+            "class": "search-submit",
+            "form": "recipe-search",
         }, form).newElement();
 
     const logoSearch = new HtmlElements("i",{"class": "fas fa-search"}, btn).newElement();
