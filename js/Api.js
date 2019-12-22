@@ -1,6 +1,7 @@
 // define constants for API url and API authentication key
 const API_KEY = '046d215a9f344c39ad5e3bf194063388';
 
+let searchedQuery = new URLSearchParams(location.search);
 
 async function recipeSearchByName(queryParams) {
 
