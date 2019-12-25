@@ -41,7 +41,6 @@ const createMenu = (list) =>{
             "href": list[i].link
         }, links, list[i].nameTag).newElement();
     }
-
 };
 
 const createTitle = () =>{
@@ -49,12 +48,15 @@ const createTitle = () =>{
     const titleLink = new HtmlElements("a", {"href": "index.html"}, titleDiv)
         .newElement();
     const headerSize = new HtmlElements("h1", {"class" : ""}, titleLink, "Toucan's Recipes")
-        .newElement() 
+        .newElement();
+    createCarousel(titleDiv);
 };
 
+
+
 const createSearchForm = () =>{
-    const searcContainer = new HtmlElements("div", {"class": "search-container"}, header). newElement();
-    const form = new HtmlElements("form", {"action" : "#", "method" : "get"}, searcContainer).newElement();;
+    const searchContainer = new HtmlElements("div", {"class": "search-container"}, header). newElement();
+    const form = new HtmlElements("form", {"action" : "#", "method" : "get"}, searchContainer).newElement();;
     const label = new HtmlElements("label", {"for": "search-input"},form).newElement();
     const inputSearch = new HtmlElements("input", 
         {
@@ -70,4 +72,8 @@ const createSearchForm = () =>{
         }, form).newElement();
 
     const logoSearch = new HtmlElements("i",{"class": "fas fa-search"}, btn).newElement();
-}
+};
+
+
+
+
