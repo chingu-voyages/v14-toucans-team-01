@@ -10,6 +10,7 @@
 @import 'modal';
 @import 'reciperesult';
 @import 'wine';
+@import 'recipesearch';
 
 $sm: 320px;
 $md: 768px;
@@ -21,7 +22,7 @@ body {
   background: #f5deb3; 
   font-family: 'Courier';
   color: #696969;
-  
+  counter-reset: number;
 }
 
 #container {

@@ -20,7 +20,7 @@
 					<div id="nav-content">
 							<ul class="links-container">
 								<div class="nav-close-btn">&times;</div>
-								<li class="links">About Us</li>
+								<li class="links" id="aboutus">About Us</li>
 								<li class="links"><a href="_entrees.html">Products</a></li>
 								<li class="links"><a href="_appetizer.html">Pricing</a></li>
 								<li class="links"><a href="_dessert.html">Solutions</a></li>
@@ -78,30 +78,36 @@
 				</div>
 			</div>
 			<div class="random-menu-disp">
-				<div class="random-menu-card">
-					<div class="menu-img-container">
-						<img class="card-img" src="./images/Appetizer.jpg" alt="menu picture">
+					<div class="random-menu-card">
+						<div class="menu-img-container"></div>
+						<div class="card-info-container">
+							<h3 id="name" class="card-name cap" onClick="">Menu Name</h3>
+						</div>
 					</div>
-					<div class="card-info-container">
-						<h3 id="name" class="card-name cap">Menu Name</h3>
+					<div class="random-menu-card">
+						<div class="menu-img-container"></div>
+						<div class="card-info-container">
+							<h3 id="name" class="card-name cap">Menu Name</h3>
+						</div>
 					</div>
-				</div>
-				<div class="random-menu-card">
-					<div class="menu-img-container">
-						<img class="card-img" src="./images/Entree.jpg" alt="menu picture">
+					<div class="random-menu-card">
+						<div class="menu-img-container"></div>
+						<div class="card-info-container">
+							<h3 id="name" class="card-name cap">Menu Name</h3>
+						</div>
 					</div>
-					<div class="card-info-container">
-						<h3 id="name" class="card-name cap">Menu Name</h3>
+					<div class="random-menu-card">
+						<div class="menu-img-container"></div>
+						<div class="card-info-container">
+							<h3 id="name" class="card-name cap">Menu Name</h3>
+						</div>
 					</div>
-				</div>
-				<div class="random-menu-card">
-					<div class="menu-img-container">
-						<img class="card-img" src="./images/Steak.jpg" alt="menu picture">
+					<div class="random-menu-card">
+						<div class="menu-img-container"></div>
+						<div class="card-info-container">
+							<h3 id="name" class="card-name cap">Menu Name</h3>
+						</div>
 					</div>
-					<div class="card-info-container">
-						<h3 id="name" class="card-name cap">Menu Name</h3>
-					</div>
-				</div>
 			</div>
 			<div class="pictures-container">
 			<!--
@@ -111,12 +117,14 @@
 				</div>
 			-->
 			</div>
+			<div id="output_message"></div>
 			<div class="more-info">
 				<!--
 				<a href="#">blog</a>
 				<a href="#">Favorites</a>
 				-->
 			</div>
+			<div id="modal"></div>
 			<footer>
 				<!-- <div class="footer-menu">
 					<ul class="footer">
@@ -132,10 +140,17 @@
 					<li class="social"><i class="fab fa-pinterest pinterest-icon"></i></li>
 				</ul>
 			</footer>
+			<!-- <form action="_searchresult.html" id="form1" >
+					<input type="text" id="input_message" value="">
+					<input type="button" onclick="func1()" value="送信">
+				</form> -->
 	</div>
 	<script src="js/HtmlElements.js"></script>
 	<script src="js/Api.js"></script>
 	<script src="js/menu.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/randomrecipe.js"></script>
+	<script src="js/recipeshow.1.js"></script>
 </body>
 </html>

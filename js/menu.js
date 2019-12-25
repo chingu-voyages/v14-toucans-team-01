@@ -24,7 +24,7 @@ const linkName = [
     },
     {
         nameTag:"Wines",
-        link: "./wine.html"
+        link: "./_wine.html"
     }];
 
 const createMenu = (list) =>{

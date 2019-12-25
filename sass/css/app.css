@@ -193,7 +193,6 @@
     background-position: left top;
     /* 横長画像の左上を基準に表示 */
     margin-bottom: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     border: solid 1px lightgray; } }
 
 .image:hover {
@@ -219,7 +218,7 @@
 
 .food-head {
   text-align: center;
-  font-size: 13px; }
+  font-size: 15px; }
 
 .random-menu-disp {
   display: flex;
@@ -228,28 +227,25 @@
     .random-menu-disp {
       margin: 0 70px; } }
 
-@media (min-width: 320px) {
-  .random-menu-card {
-    margin: 20px 50px; } }
-@media (min-width: 768px) {
-  .random-menu-card {
-    width: 150px;
-    height: 150px;
-    margin: 40px; } }
-@media (min-width: 1024px) {
-  .random-menu-card {
-    width: 200px;
-    height: 200px;
-    margin: 30px; } }
+.random-menu-card {
+  display: flex; }
+  @media (min-width: 768px) {
+    .random-menu-card {
+      width: 150px;
+      height: 150px;
+      margin: 40px; } }
+  @media (min-width: 1024px) {
+    .random-menu-card {
+      width: 200px;
+      height: 200px;
+      margin: 30px; } }
 
 .card-img {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-  border: solid 2px olive; }
+  border: solid 2px beige; }
   @media (min-width: 320px) {
     .card-img {
       width: 150px;
-      height: 150px;
-      position: absolute; } }
+      height: 150px; } }
   @media (min-width: 1024px) {
     .card-img {
       width: 200px;
@@ -258,18 +254,26 @@
 @media (min-width: 320px) {
   .card-info-container {
     width: 150px;
-    height: 130px;
-    position: relative;
+    height: 80px;
     text-align: center;
-    padding-top: 20px;
-    color: white;
+    color: tomato;
     /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); */
-    text-shadow: 1px 1px 0 #000;
-    font-size: 20px; } }
+    font-size: 15px; } }
 @media (min-width: 1024px) {
   .card-info-container {
     width: 200px;
     height: 200px; } }
+
+.menu-img-container {
+  margin-bottom: 20px; }
+
+@media (min-width: 320px) {
+  .card-name {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    font-size: 13px;
+    text-align: left; } }
 
 @media (min-width: 320px) {
   .footer {
@@ -479,7 +483,8 @@ body {
     font-size: 17px; } }
 
 .cooking-min {
-  display: flex; }
+  display: flex;
+  margin: 0 30px; }
 
 @media (min-width: 320px) {
   #prepMin {
@@ -503,16 +508,18 @@ body {
     padding-right: 10px;
     font-size: 17px; } }
 
-#recipe-name {
-  text-align: center; }
+@media (min-width: 320px) {
+  #recipe-name h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #dc143c; } }
 
 @media (min-width: 320px) {
   #recipe-imagepic {
     width: 200px;
     height: 200px; } }
 
-ul, ol {
-  counter-reset: item;
+#recipe-inst ul, li {
   list-style: none;
   padding-left: 0; }
 
@@ -537,8 +544,8 @@ ul, ol {
 
 @media (min-width: 320px) {
   #recipe-inst li:before {
-    counter-increment: item;
-    content: counter(item) ".";
+    counter-increment: number;
+    content: counter(number) ".";
     /* 以下は自由に装飾... */
     padding-right: .5em;
     font-weight: bold;
@@ -554,6 +561,38 @@ ul, ol {
     background: violet;
     border-radius: 50%;
     margin-right: 8px; } }
+
+@media (min-width: 320px) {
+  #ingredients-title {
+    color: #db0038;
+    font-size: 25px; } }
+
+#recipe-ingredients {
+  padding-left: 10px; }
+
+#recipe-ingredients li {
+  position: relative;
+  list-style-type: none !important;
+  /*ポチ消す*/
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  background: #ffdab9;
+  vertical-align: middle;
+  color: #505050;
+  border-radius: 15px 0px 0px 15px;
+  /*左側の角丸く*/ }
+
+#recipe-ingredientsul li::before {
+  display: inline-block;
+  vertical-align: middle;
+  /*以下白丸つくる*/
+  content: '';
+  width: 1em;
+  height: 1em;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 8px; }
 
 @media (min-width: 320px) {
   .searchedResult {
@@ -667,12 +706,40 @@ ul, ol {
   text-decoration: inherit;
   content: '\f35a'; }
 
+@media (min-width: 320px) {
+  #ingredients {
+    text-align: center;
+    border: solid 1px orange; } }
+
+@media (min-width: 320px) {
+  .recipe-pic {
+    width: 130px;
+    height: 130px; } }
+
+#list {
+  padding: 0; }
+
+@media (min-width: 320px) {
+  #list li {
+    display: flex; } }
+
+@media (min-width: 320px) {
+  .recipe_title {
+    width: 120px;
+    padding: 30px 10px 0 10px; } }
+
+@media (min-width: 320px) {
+  .recipe-box {
+    display: flex;
+    margin: 5px; } }
+
 body {
   margin: 0;
   padding: 5px;
   background: #f5deb3;
   font-family: 'Courier';
-  color: #696969; }
+  color: #696969;
+  counter-reset: number; }
 
 #container {
   margin: 10px;

@@ -1,3 +1,4 @@
+<!-- All the comments are for implementing with js. But we can uncomment the time to create our sass file -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,34 +55,30 @@
 						</form>
 					</div> -->
 				</header>
-			<div class="winecontent">
-        <h2>Wine Paring Search</h2>
-				<p>Let's find best wine paring!	</p>
-			</div>
-			<form name="form1" id="id_form1" action="" class="search_container">
-				<input name="wine_input" id="wine_input" type="text" value="" placeholder="Search"/>
-				<i class="fas fa-search"><input type="button" class="winebtn" onClick="onButtonClick();" /></i>
-			</form>
-			<div id="output"></div>
-			<footer>
-				<div class="footer-menu">
-					<ul class="footer">
-							<li class="infos">About us</li>
-							<li class="infos">Nutriscore</li>
-							<li class="infos">Contact</li>
-					</ul>
-				</div>
-				<ul class="social network">
-					<li class="social"><i class="fab fa-facebook facebook-icon"></i></li>
-					<li class="social"><i class="fab fa-twitter twitter-icon"></i></li>
-					<li class="social"><i class="fab fa-instagram insta-icon"></i></li>
-					<li class="social"><i class="fab fa-pinterest pinterest-icon"></i></li>
+				<div name="searchedResult" class="searchedResult"></div>
+			<div id="PairedwineList">
+				<h1>Recommended Paired Wine List Best3</h1>
+				<ul id="list">
+					
 				</ul>
-			</footer>
-	</div>
-	<script src="js/script.js"></script>
+			</div>
+			<h3 class="winedescription">Wine Description:</h3>
+			<div name="paringText" id="pairingText"></div>
+			<div id="matchedWine">
+				<p id="wineName">Recommended Brand: </p>
+				<div id="machedWineName"></div>
+				<div id="matchedWineImage"></div>
+				<div class="wineprice">
+						<p id="winePrice">Wine Price: </p>
+						<div name="winePrice" id="winePriceTag"></div>
+				</div>
+			</div>
+			
 	<script src="js/HtmlElements.js"></script>
 	<script src="js/Api.js"></script>
-	<script src="js/winemenu.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/winesearch.js"></script>
 </body>
 </html>
