@@ -1,0 +1,105 @@
+.steps {
+color: #db0038;
+font-size: 25px;
+}
+
+#total {
+  @include sm {
+    margin: 0;
+    font-size: 17px;
+  }
+}
+.cooking-min {
+  display: flex;
+}
+
+#prepMin {
+  @include sm {
+    color: #db0038;
+    font-size: 23px;
+  }
+}
+
+#totalMin {
+  @include sm {
+    color: #db0038;
+    font-size: 23px;
+  }
+}
+#recipe-image {
+  @include sm {
+    text-align: center;
+  }
+}
+
+#prep {
+  @include sm {
+    border-right-style: groove;
+    border-right-color: azure;
+    margin: 0 20px 0 30px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+
+  }
+
+#recipe-name {
+  text-align: center;
+}
+#recipe-imagepic {
+  @include sm {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+ul, ol {
+  counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+}
+
+#recipe-inst li {
+  @include sm {
+    padding-left: 0;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  
+  @include md {
+    position: relative;
+    list-style-type: none!important;/*ポチ消す*/
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    background: white;
+    vertical-align: middle;
+    color: #505050;
+    border-radius: 15px 0px 0px 15px;/*左側の角丸く*/
+  }
+  
+}
+
+#recipe-inst li:before{ 
+  @include sm {
+      counter-increment: item;
+      content: counter(item)'.';
+      /* 以下は自由に装飾... */
+      padding-right: .5em;
+      font-weight: bold;
+      color: #db0038;
+    
+  }
+  @include md {
+    display:inline-block; 
+    vertical-align: middle;
+    /*以下白丸つくる*/
+    content:'';
+    width:1em;
+    height: 1em;
+    background: violet;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}
