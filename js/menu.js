@@ -28,14 +28,16 @@ const linkName = [
     }];
 
 const createMenu = (list) =>{
-    const logoSiteLink = new HtmlElements("a", {"href" : "index.html"}, navbar).newElement();
+    const logoDiv = new HtmlElements("div", {"class": "logoDiv"}, navbar).newElement();
+    const logoSiteLink = new HtmlElements("a", {"href" : "index.html"}, logoDiv).newElement();
     const logoSite = new HtmlElements("h4",{"class": "logo"}, logoSiteLink).newElement();
     const logoImg = new HtmlElements("img", {
         "src": "./images/logo.png",
         "class": "logo-image-lg"
     }, logoSite).newElement();
+    const linksDiv = new HtmlElements("div", {"class": "linksDiv"}, navbar).newElement();
     for(let i = 0; i<list.length; i++){
-        const links = new HtmlElements("li", {"class" : "links"}, navbar)
+        const links = new HtmlElements("li", {"class" : "links"},linksDiv)
             .newElement();
         const linksTag = new HtmlElements("a", {
             "href": list[i].link
