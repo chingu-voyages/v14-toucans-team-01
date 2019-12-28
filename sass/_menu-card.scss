@@ -89,7 +89,7 @@ display: flex;
   @include md {
     width: 150px;
     height: 150px;
-    margin: 40px;
+    margin: 20px;
   }
   @include lg {
     width: 200px;
@@ -104,6 +104,9 @@ display: flex;
   @include sm {
     width: 150px;
     height: 150px;
+  }
+  @include md {
+    margin-left: 70px;
   }
   @include lg {
     width: 200px;
@@ -128,6 +131,9 @@ display: flex;
 
 .menu-img-container  {
   margin-bottom: 20px;
+  @include md{
+    margin: 0;
+  }
 }
 
 .card-name {
@@ -137,5 +143,9 @@ display: flex;
     margin: 10px;
     font-size: 13px;
     text-align: left;
+  }
+
+  @include md {
+    width: 70px;
   }
 }

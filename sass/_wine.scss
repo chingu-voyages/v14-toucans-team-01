@@ -111,15 +111,27 @@
   height: 2.3em;
   width: 260px;
   overflow: hidden;
+
+  @include md {
+    margin: 0 230px;
+  }
+
+  @include lg {
+    margin: 0 350px;
+  }
+  
 }
+
 .search_container input[type="text"]{
   border: none;
   height: 2.0em;
   width: 190px;
 }
+
 .search_container input[type="text"]:focus {
   outline: 0;
 }
+
 .search_container input[type="submit"]{
   cursor: pointer;
   font-family: FontAwesome;
@@ -135,10 +147,26 @@
   outline : none;
 }
 
+.winebtn {
+  @include md {
+    display: none;
+  }
+}
+
 .winebtn::after {
   font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
     content:'\f35a';
+}
+
+.desc-2 {
+  @include sm {
+    font-size: 11px;
+  }
+  @include md {
+    text-align: center;
+    font-size: 13px;
+  }
 }

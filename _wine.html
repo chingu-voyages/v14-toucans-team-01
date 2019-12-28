@@ -5,79 +5,119 @@
 	<title>ChinguRecipes</title>
 	<link rel="stylesheet" type="text/css" href="./sass/css/app.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
-		<div id="container">
-				<header class="header">
-					<nav>
-						<div class="nav-bar">
-							<input id="nav-input" type="checkbox" class="nav-unshown">
-							<label id="nav-open" for="nav-input"><span></span></label>
-							<a href="index.html"><img src="./images/logo.png" class="logo-image"></a>
-							<label class="nav-unshown" id="nav-close" for="nav-input"></label>
-							<div id="nav-content">
-									<ul class="links-container">
-										<div class="nav-close-btn">&times;</div>
-										<li class="links" id="aboutus">About Us</li>
-										<li class="links"><a href="_entrees.html">Products</a></li>
-										<li class="links"><a href="_appetizer.html">Pricing</a></li>
-										<li class="links"><a href="_dessert.html">Solutions</a></li>
-										<li class="links"><a href="_wine.html">Support</a></li>
-										<li class="links"><a href="_contact.html">Contact</a></li>
-									</ul>
-							</div>
-						</div>
-						<ul class="links-container desktop-menu">
-		<!--					<div class="nav-close-btn">&times;</div>
-							<li class="links">About Us</li>
-							<li class="links"><a href="_entrees.html">Products</a></li>
-							<li class="links"><a href="_appetizer.html">Pricing</a></li>
-							<li class="links"><a href="_dessert.html">Solutions</a></li>
-							<li class="links"><a href="_wine.html">Support</a></li>
-							<li class="links"><a href="_contact.html">Contact</a></li>
-							<a href="index.html">
-									<h4 class="logo"><img src="./images/logo.png" class="logo-image-lg"></h4>
-								</a>-->
-						</ul>
-							
-					</nav>
-					<!-- We can put a carousel in the background of the header -->
-					<!-- <div class="title">
-						<a href="index.html"><h1>Toucan's Recipes</h1></a>
-					</div> -->
-		<!-- 			<div class="search-container">
-						<form action="#" method="get">
-							<label for="search-input"></label>
-							<input type="search" id="search-input" class="search-input" placeholder="Search...">
-							<button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
-						</form>
-					</div> -->
-				</header>
+	<div id="container">
+		<header class="header">
+			<nav>
+				<div class="nav-bar">
+					<input id="nav-input" type="checkbox" class="nav-unshown">
+					<label id="nav-open" for="nav-input"><span></span></label>
+					<a href="index.html"><img src="./images/logo.png" class="logo-image"></a>
+					<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+					<div id="nav-content">
+							<ul class="links-container">
+								<div class="nav-close-btn">&times;</div>
+								<li class="links"><a href="_aboutus.html">About Us</a></li>
+								<li class="links"><a href="_entrees.html">Products</a></li>
+								<li class="links"><a href="_appetizer.html">Pricing</a></li>
+								<li class="links"><a href="_dessert.html">Solutions</a></li>
+								<li class="links"><a href="_wine.html">Support</a></li>
+								<li class="links"><a href="_contact.html">Contact</a></li>
+							</ul>
+					</div>
+				</div>
+				<ul class="links-container desktop-menu">
+<!--					<div class="nav-close-btn">&times;</div>
+					<li class="links">About Us</li>
+					<li class="links"><a href="_entrees.html">Products</a></li>
+					<li class="links"><a href="_appetizer.html">Pricing</a></li>
+					<li class="links"><a href="_dessert.html">Solutions</a></li>
+					<li class="links"><a href="_wine.html">Support</a></li>
+					<li class="links"><a href="_contact.html">Contact</a></li>
+					<a href="index.html">
+							<h4 class="logo"><img src="./images/logo.png" class="logo-image-lg"></h4>
+						</a>-->
+				</ul>
+					
+			</nav>
+			<!-- We can put a carousel in the background of the header -->
+			<!-- <div class="title">
+				<a href="index.html"><h1>Toucan's Recipes</h1></a>
+			</div> -->
+			<div class="search-container">
+				<form action="#" method="get">
+					<label for="search-input"></label>
+					<input type="search" id="search-input" class="search-input" placeholder="Search...">
+					<button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+		</header>
+			<div class="menu-card">
+				<div class="entree image-space"> 
+					<img src="./images/Entree.jpg" class="image"> 
+					<div class="food-head">Entree</div> 
+				</div>
+				<div class="appetizer image-space"> 
+					<img src="./images/Appetizer.jpg" class="image"> 
+					<div class="food-head">Appetiser</div> 
+				</div>
+				<div class="main-course image-space"> 
+					<img src="./images/Steak.jpg" class="image"> 
+					<div class="food-head">Main Course</div> 
+				</div>
+				<div class="dessert image-space"> 
+					<img src="./images/Dessert.jpg" class="image"> 
+					<div class="food-head">Dessert</div> 
+				</div>
+				<div class="wine image-space"> 
+					<img src="./images/Wine.jpg" class="image"> 
+					<div class="food-head">Wine</div> 
+				</div>
+			</div>
+			
+			<div class="pictures-container">
+			<!--
+				<div class="recipe-img-container">
+						<img class="big-recipe-img" src="recipes image url" alt="recipes photo'>
+						<img class="little-recipe-img" src="recipes image url" alt="recipes photo">
+				</div>
+			-->
+			</div>
+			<div class="more-info">
+				<!--
+				<a href="#">blog</a>
+				<a href="#">Favorites</a>
+				-->
+			</div>
 			<div class="winecontent">
         <h2>Wine Paring Search</h2>
-				<p>Let's find best wine paring!	</p>
+				<p class="desc-1">Let's find best wine paring!	</p>
 			</div>
-			<form name="form1" id="id_form1" action="" class="search_container">
+			<form name="wine-form" id="id_form1" action="#" class="search_container">
 				<input name="wine_input" id="wine_input" type="text" value="" placeholder="Search"/>
 				<i class="fas fa-search"><input type="button" class="winebtn" onClick="onButtonClick();" /></i>
 			</form>
+			<p class="desc-2">#Type the searchword such as "cheddar" to find your best match wine!	</p>
 			<div id="output"></div>
 			<footer>
-				<div class="footer-menu">
-					<ul class="footer">
-							<li class="infos">About us</li>
-							<li class="infos">Nutriscore</li>
-							<li class="infos">Contact</li>
+					<!-- <div class="footer-menu">
+						<ul class="footer">
+								<li class="infos">About us</li>
+								<li class="infos">Nutriscore</li>
+								<li class="infos">Contact</li>
+						</ul>
+					</div> -->
+					<ul class="sns">
+						<li class="social"><i class="fab fa-facebook facebook-icon"></i></li>
+						<li class="social"><i class="fab fa-twitter twitter-icon"></i></li>
+						<li class="social"><i class="fab fa-instagram insta-icon"></i></li>
+						<li class="social"><i class="fab fa-pinterest pinterest-icon"></i></li>
 					</ul>
-				</div>
-				<ul class="social network">
-					<li class="social"><i class="fab fa-facebook facebook-icon"></i></li>
-					<li class="social"><i class="fab fa-twitter twitter-icon"></i></li>
-					<li class="social"><i class="fab fa-instagram insta-icon"></i></li>
-					<li class="social"><i class="fab fa-pinterest pinterest-icon"></i></li>
-				</ul>
-			</footer>
+				</footer>
 	</div>
 	<script src="js/script.js"></script>
 	<script src="js/HtmlElements.js"></script>

@@ -196,6 +196,10 @@
   border-radius: 2px 0 0 2px;
   width: 200px;
   height: 30px; }
+  @media (min-width: 768px) {
+    .search-input {
+      width: 300px;
+      height: 40px; } }
 
 .search-submit {
   background: lightgray;
@@ -251,7 +255,7 @@
     .random-menu-card {
       width: 150px;
       height: 150px;
-      margin: 40px; } }
+      margin: 20px; } }
   @media (min-width: 1024px) {
     .random-menu-card {
       width: 200px;
@@ -264,6 +268,9 @@
     .card-img {
       width: 150px;
       height: 150px; } }
+  @media (min-width: 768px) {
+    .card-img {
+      margin-left: 70px; } }
   @media (min-width: 1024px) {
     .card-img {
       width: 200px;
@@ -284,6 +291,9 @@
 
 .menu-img-container {
   margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .menu-img-container {
+      margin: 0; } }
 
 @media (min-width: 320px) {
   .card-name {
@@ -292,6 +302,9 @@
     margin: 10px;
     font-size: 13px;
     text-align: left; } }
+@media (min-width: 768px) {
+  .card-name {
+    width: 70px; } }
 
 @media (min-width: 320px) {
   .footer {
@@ -694,6 +707,12 @@ body {
   height: 2.3em;
   width: 260px;
   overflow: hidden; }
+  @media (min-width: 768px) {
+    .search_container {
+      margin: 0 230px; } }
+  @media (min-width: 1024px) {
+    .search_container {
+      margin: 0 350px; } }
 
 .search_container input[type="text"] {
   border: none;
@@ -717,12 +736,24 @@ body {
   top: -10px;
   outline: none; }
 
+@media (min-width: 768px) {
+  .winebtn {
+    display: none; } }
+
 .winebtn::after {
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
   content: '\f35a'; }
+
+@media (min-width: 320px) {
+  .desc-2 {
+    font-size: 11px; } }
+@media (min-width: 768px) {
+  .desc-2 {
+    text-align: center;
+    font-size: 13px; } }
 
 @media (min-width: 320px) {
   #ingredients {
@@ -750,6 +781,37 @@ body {
   .recipe-box {
     display: flex;
     margin: 5px; } }
+
+@media (min-width: 320px) {
+  #us {
+    position: relative;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545; } }
+
+@media (min-width: 320px) {
+  #us:after {
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #fff #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15); } }
+
+@media (min-width: 320px) {
+  #us p {
+    margin: 0;
+    padding: 0; } }
+
+#us a:link {
+  color: orange; }
+
+#us a:visited {
+  color: orange; }
 
 body {
   margin: 0;
