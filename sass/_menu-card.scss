@@ -73,6 +73,7 @@ $lg: 1024px;
   font-size: 15px;
 }
 
+
 .random-menu-disp {
   display: flex;
   flex-wrap: wrap;
@@ -87,9 +88,8 @@ display: flex;
    
   }
   @include md {
-    width: 150px;
-    height: 150px;
-    margin: 20px;
+    width: 235px;
+    height: 160px;
   }
   @include lg {
     width: 200px;
@@ -104,9 +104,6 @@ display: flex;
   @include sm {
     width: 150px;
     height: 150px;
-  }
-  @include md {
-    margin-left: 70px;
   }
   @include lg {
     width: 200px;
@@ -147,5 +144,6 @@ display: flex;
 
   @include md {
     width: 70px;
+    font-size: 11px;
   }
 }

@@ -20,12 +20,20 @@
   @include sm {
     display: flex;
   }
+  @include md {
+    margin: 0 200px;
+  }
 }
 
 .recipe_title {
   @include sm {
     width: 120px;
     padding: 30px 10px 0 10px;
+  }
+
+  @include md {
+    width: 350px;
+    padding: 20px 10px;
   }
 }
 
