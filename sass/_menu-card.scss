@@ -27,7 +27,7 @@ $lg: 1024px;
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */ 
     background-position: left top;  /* 横長画像の左上を基準に表示 */ 
     margin-bottom: 10px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+    // box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
     border: solid 1px lightgray; 
   }
   @include lg {
@@ -70,8 +70,9 @@ $lg: 1024px;
 
 .food-head {
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
 }
+
 
 .random-menu-disp {
   display: flex;
@@ -82,14 +83,13 @@ $lg: 1024px;
   }
 }
 .random-menu-card {
-
+display: flex;
   @include sm {
-    margin: 20px 50px;
+   
   }
   @include md {
-    width: 150px;
-    height: 150px;
-    margin: 40px;
+    width: 235px;
+    height: 160px;
   }
   @include lg {
     width: 200px;
@@ -99,12 +99,11 @@ $lg: 1024px;
 }
 
 .card-img {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-  border: solid 2px olive;
+  // box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  border: solid 2px beige;
   @include sm {
     width: 150px;
     height: 150px;
-    position: absolute;
   }
   @include lg {
     width: 200px;
@@ -115,17 +114,36 @@ $lg: 1024px;
 .card-info-container {
   @include sm {
     width: 150px;
-    height: 130px;
-    position: relative;
+    height: 80px;
     text-align: center;
-    padding-top: 20px;
-    color: white;
+    color: tomato;
     /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); */
-    text-shadow: 1px 1px 0 #000;
-    font-size: 20px;
+    font-size: 15px;
   }
   @include lg {
     width: 200px;
     height: 200px;
+  }
+}
+
+.menu-img-container  {
+  margin-bottom: 20px;
+  @include md{
+    margin: 0;
+  }
+}
+
+.card-name {
+  @include sm {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  @include md {
+    width: 70px;
+    font-size: 11px;
   }
 }

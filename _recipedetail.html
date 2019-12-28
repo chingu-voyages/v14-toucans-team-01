@@ -1,0 +1,52 @@
+<!-- All the comments are for implementing with js. But we can uncomment the time to create our sass file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>ChinguRecipes</title>
+	<link rel="stylesheet" type="text/css" href="./sass/css/app.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+          <nav>
+            <div class="nav-bar">
+              <input id="nav-input" type="checkbox" class="nav-unshown">
+              <label id="nav-open" for="nav-input"><span></span></label>
+              <a href="index.html"><img src="./images/logo.png" class="logo-image"></a>
+              <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+              <div id="nav-content">
+                  <ul class="links-container">
+                    <div class="nav-close-btn">&times;</div>
+                    <li class="links" id="aboutus">About Us</li>
+                    <li class="links"><a href="_entrees.html">Products</a></li>
+                    <li class="links"><a href="_appetizer.html">Pricing</a></li>
+                    <li class="links"><a href="_dessert.html">Solutions</a></li>
+                    <li class="links"><a href="_wine.html">Support</a></li>
+                    <li class="links"><a href="_contact.html">Contact</a></li>
+                  </ul>
+              </div>
+            </div>
+  <div id="recipe-name"></div>
+  <div id="recipe-image"></div>
+  <div class="cooking-min">
+      <div id="preparedMinutes"></div>
+      <div id="cookingMinutes"></div>
+  </div>
+  <div id="recipe-check"></div>
+  <h3 id="ingredients-title">Ingredients</h3>
+  <ul id="recipe-ingredients"></ul>
+  <div class="steps">Steps</div>
+  <ul id="recipe-inst"></ul>
+      
+	<script src="js/HtmlElements.js"></script>
+	<script src="js/Api.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/recipe_api.js"></script>
+	<script src="js/recipeshow.js"></script>
+</body>
+</html>

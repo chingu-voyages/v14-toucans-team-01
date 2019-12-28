@@ -1,63 +1,45 @@
 @charset "UTF-8";
 @media (min-width: 320px) {
   .title {
-    font-size: 13px;
-  }
-}
+    font-size: 13px; } }
 @media (min-width: 768px) {
   .title {
-    font-size: 20px;
-  }
-}
+    font-size: 20px; } }
 
 @media (min-width: 320px) {
   .nav-bar {
-    display: flex;
-  }
-}
+    display: flex; } }
 
 @media (min-width: 320px) {
   .logo-image {
     width: 200px;
-    margin-left: 30px;
-  }
-}
+    margin-left: 30px; } }
 @media (min-width: 768px) {
   .logo-image {
-    display: none;
-  }
-}
+    display: none; } }
 
 .logo-image-lg {
-  margin-right: 20px;
-}
-@media (min-width: 768px) {
-  .logo-image-lg {
-    width: 200px;
-  }
-}
+  margin-right: 20px; }
+  @media (min-width: 768px) {
+    .logo-image-lg {
+      width: 200px; } }
 
 #nav-drawer {
-  position: relative;
-}
+  position: relative; }
 
 /*チェックボックス等は非表示に*/
 .nav-unshown {
-  display: none;
-}
+  display: none; }
 
 /*アイコンのスペース*/
 #nav-open {
   display: inline-block;
   width: 30px;
   height: 22px;
-  vertical-align: middle;
-}
-@media (min-width: 768px) {
-  #nav-open {
-    display: none;
-  }
-}
+  vertical-align: middle; }
+  @media (min-width: 768px) {
+    #nav-open {
+      display: none; } }
 
 /*ハンバーガーアイコンをCSSだけで表現*/
 #nav-open span, #nav-open span:before, #nav-open span:after {
@@ -69,17 +51,14 @@
   border-radius: 3px;
   background: #555;
   display: block;
-  content: "";
-  cursor: pointer;
-}
+  content: '';
+  cursor: pointer; }
 
 #nav-open span:before {
-  bottom: -8px;
-}
+  bottom: -8px; }
 
 #nav-open span:after {
-  bottom: -16px;
-}
+  bottom: -16px; }
 
 /*閉じる用の薄黒カバー*/
 #nav-close {
@@ -94,8 +73,7 @@
   height: 100%;
   background: black;
   opacity: 0;
-  transition: 0.3s ease-in-out;
-}
+  transition: .3s ease-in-out; }
 
 /*中身*/
 #nav-content {
@@ -112,158 +90,120 @@
   height: 100%;
   background: #fff;
   /*背景色*/
-  transition: 0.3s ease-in-out;
+  transition: .3s ease-in-out;
   /*滑らかに表示*/
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
-  /*左に隠しておく*/
-}
+  /*左に隠しておく*/ }
 
 /*チェックが入ったらもろもろ表示*/
 #nav-input:checked ~ #nav-close {
   display: block;
   /*カバーを表示*/
-  opacity: 0.5;
-}
+  opacity: .5; }
 
 #nav-input:checked ~ #nav-content {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
   /*中身を表示（右へスライド）*/
-  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
-}
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15); }
 
 @media (min-width: 320px) {
   .desktop-menu {
-    display: none;
-  }
-}
+    display: none; } }
 @media (min-width: 768px) {
   .desktop-menu {
-    display: inline-block;
-  }
-}
+    display: inline-block; } }
 .desktop-menu .logoDiv {
   width: 25%;
-  margin-left: 2%;
-}
+  margin-left: 2%; }
 .desktop-menu .linksDiv {
   width: 75%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 2%;
-}
+  margin-right: 2%; }
 
 @media (min-width: 320px) {
   h4 {
-    width: 280px;
-  }
-}
+    width: 280px; } }
 @media (min-width: 768px) {
   h4 {
-    width: 200px;
-  }
-}
+    width: 200px; } }
 
 @media (min-width: 320px) {
   .nav-close-btn {
     padding-left: 20px;
     text-align: left;
-    font-size: 25px;
-  }
-}
+    font-size: 25px; } }
 @media (min-width: 768px) {
   .nav-close-btn {
-    display: none;
-  }
-}
+    display: none; } }
 
 .links-container {
-  padding: 0;
-}
-@media (min-width: 320px) {
-  .links-container {
-    list-style: none;
-  }
-}
-@media (min-width: 768px) {
-  .links-container {
-    display: flex;
-  }
-}
+  padding: 0; }
+  @media (min-width: 320px) {
+    .links-container {
+      list-style: none; } }
+  @media (min-width: 768px) {
+    .links-container {
+      display: flex; } }
 
 .links-container li {
-  color: #f4a460;
-}
-@media (min-width: 320px) {
-  .links-container li {
-    text-align: center;
-    margin: 20px 30px 20px 0;
-    text-align: right;
-  }
-}
-@media (min-width: 768px) {
-  .links-container li {
-    margin: 40px 10px 0 0;
-    font-size: 16px;
-  }
-}
-@media (min-width: 1024px) {
-  .links-container li {
-    font-size: 20px;
-  }
-}
+  color: #f4a460; }
+  @media (min-width: 320px) {
+    .links-container li {
+      text-align: center;
+      margin: 20px 30px 20px 0;
+      text-align: right; } }
+  @media (min-width: 768px) {
+    .links-container li {
+      margin: 40px 10px 0 0;
+      font-size: 16px; } }
+  @media (min-width: 1024px) {
+    .links-container li {
+      font-size: 20px; } }
 
 .links-container li:hover {
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 .links-container li a {
-  color: #f4a460;
-}
-@media (min-width: 320px) {
-  .links-container li a {
-    text-decoration: none;
-  }
-}
-@media (min-width: 768px) {
-  .links-container li a {
-    text-decoration: underline dashed #f4a460;
-  }
-}
+  color: #f4a460; }
+  @media (min-width: 320px) {
+    .links-container li a {
+      text-decoration: none; } }
+  @media (min-width: 768px) {
+    .links-container li a {
+      text-decoration: underline dashed #f4a460; } }
 
 @media (min-width: 320px) {
   .links {
-    margin-right: 10px;
-  }
-}
+    margin-right: 10px; } }
 
 #slideshow div {
   width: 100%;
-  height: 500px;
-}
-#slideshow div img {
-  width: 100%;
-  height: 100%;
-}
+  height: 500px; }
+  #slideshow div img {
+    width: 100%;
+    height: 100%; }
 
 .search-container {
-  text-align: center;
-}
+  text-align: center; }
 
 .search-input {
   border: solid 2px lightgray;
   margin: 20px 0 20px 0;
   border-radius: 2px 0 0 2px;
   width: 200px;
-  height: 30px;
-}
+  height: 30px; }
+  @media (min-width: 768px) {
+    .search-input {
+      width: 300px;
+      height: 40px; } }
 
 .search-submit {
   background: lightgray;
-  height: 30px;
-}
+  height: 30px; }
 
 @media (min-width: 320px) {
   .image {
@@ -275,113 +215,93 @@
     background-position: left top;
     /* 横長画像の左上を基準に表示 */
     margin-bottom: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-    border: solid 1px lightgray;
-  }
-}
+    border: solid 1px lightgray; } }
+
 .image:hover {
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 @media (min-width: 320px) {
   .image-space {
-    margin-right: 10px;
-  }
-}
+    margin-right: 10px; } }
 @media (min-width: 1024px) {
   .image-space {
-    margin-right: 30px;
-  }
-}
+    margin-right: 30px; } }
 
 .menu-card {
-  display: flex;
-}
-@media (min-width: 768px) {
-  .menu-card {
-    width: 500px;
-    padding: 0 100px;
-  }
-}
-@media (min-width: 1024px) {
-  .menu-card {
-    width: 600px;
-    padding: 0 180px;
-  }
-}
+  display: flex; }
+  @media (min-width: 768px) {
+    .menu-card {
+      width: 500px;
+      padding: 0 100px; } }
+  @media (min-width: 1024px) {
+    .menu-card {
+      width: 600px;
+      padding: 0 180px; } }
 
 .food-head {
   text-align: center;
-  font-size: 13px;
-}
+  font-size: 15px; }
 
 .random-menu-disp {
   display: flex;
-  flex-wrap: wrap;
-}
-@media (min-width: 1024px) {
-  .random-menu-disp {
-    margin: 0 70px;
-  }
-}
+  flex-wrap: wrap; }
+  @media (min-width: 1024px) {
+    .random-menu-disp {
+      margin: 0 70px; } }
 
-@media (min-width: 320px) {
-  .random-menu-card {
-    margin: 20px 50px;
-  }
-}
-@media (min-width: 768px) {
-  .random-menu-card {
-    width: 150px;
-    height: 150px;
-    margin: 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .random-menu-card {
-    width: 200px;
-    height: 200px;
-    margin: 30px;
-  }
-}
+.random-menu-card {
+  display: flex; }
+  @media (min-width: 768px) {
+    .random-menu-card {
+      width: 235px;
+      height: 160px; } }
+  @media (min-width: 1024px) {
+    .random-menu-card {
+      width: 200px;
+      height: 200px;
+      margin: 30px; } }
 
 .card-img {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-  border: solid 2px olive;
-}
-@media (min-width: 320px) {
-  .card-img {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-  }
-}
-@media (min-width: 1024px) {
-  .card-img {
-    width: 200px;
-    height: 200px;
-  }
-}
+  border: solid 2px beige; }
+  @media (min-width: 320px) {
+    .card-img {
+      width: 150px;
+      height: 150px; } }
+  @media (min-width: 1024px) {
+    .card-img {
+      width: 200px;
+      height: 200px; } }
 
 @media (min-width: 320px) {
   .card-info-container {
     width: 150px;
-    height: 130px;
-    position: relative;
+    height: 80px;
     text-align: center;
-    padding-top: 20px;
-    color: white;
+    color: tomato;
     /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); */
-    text-shadow: 1px 1px 0 #000;
-    font-size: 20px;
-  }
-}
+    font-size: 15px; } }
 @media (min-width: 1024px) {
   .card-info-container {
     width: 200px;
-    height: 200px;
-  }
-}
+    height: 200px; } }
+
+.menu-img-container {
+  margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .menu-img-container {
+      margin: 0; } }
+
+@media (min-width: 320px) {
+  .card-name {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    font-size: 13px;
+    text-align: left; } }
+@media (min-width: 768px) {
+  .card-name {
+    width: 70px;
+    font-size: 11px; } }
 
 @media (min-width: 320px) {
   .footer {
@@ -389,163 +309,532 @@
     font-size: 13px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-  }
-}
+    padding: 0; } }
 @media (min-width: 768px) {
   .footer {
-    font-size: 20px;
-  }
-}
+    font-size: 20px; } }
 
 @media (min-width: 320px) {
   .infos {
-    margin-right: 20px;
-  }
-}
+    margin-right: 20px; } }
 @media (min-width: 768px) {
   .infos {
-    margin-right: 20px;
-  }
-}
+    margin-right: 20px; } }
 @media (min-width: 1024px) {
   .infos {
-    margin-right: 20px;
-  }
-}
+    margin-right: 20px; } }
 
 .sns {
-  display: flex;
-}
-@media (min-width: 768px) {
-  .sns {
-    width: 180px;
-    padding: 0 200px 0 250px;
-  }
-}
-@media (min-width: 1024px) {
-  .sns {
-    padding: 0 200px 0 400px;
-  }
-}
+  display: flex; }
+  @media (min-width: 768px) {
+    .sns {
+      width: 180px;
+      padding: 0 200px 0 250px; } }
+  @media (min-width: 1024px) {
+    .sns {
+      padding: 0 200px 0 400px; } }
 
 @media (min-width: 320px) {
   .social {
     display: flex;
     list-style: none;
-    font-size: 13px;
-  }
-}
+    font-size: 13px; } }
 @media (min-width: 768px) {
   .social {
     display: flex;
     list-style: none;
-    font-size: 20px;
-  }
-}
+    font-size: 20px; } }
 @media (min-width: 1024px) {
   .social {
     display: flex;
     list-style: none;
-    font-size: 20px;
-  }
-}
+    font-size: 20px; } }
 
 .twitter-icon {
   font-size: 35px;
   color: #55acee;
-  margin-left: 10px;
-}
+  margin-left: 10px; }
 
 .facebook-icon {
   font-size: 35px;
   color: #315096;
-  margin-left: 10px;
-}
+  margin-left: 10px; }
 
 .insta-icon {
   /*アイコンの背景*/
   font-size: 35px;
   color: black;
-  margin-left: 10px;
-}
+  margin-left: 10px; }
 
 .pinterest-icon {
   font-size: 35px;
   color: #ce0f19;
-  margin-left: 10px;
-}
+  margin-left: 10px; }
 
 .footer-menu {
-  text-align: center;
-}
+  text-align: center; }
 
 h2 {
   text-align: center;
   text-decoration: underline dashed #f4a460;
-  color: #f4a460;
-}
+  color: #f4a460; }
 
 p {
-  margin: 10px 0 5px 0;
-}
+  margin: 10px 0 5px 0; }
 
 .contact {
-  text-align: left;
-}
+  text-align: left; }
 
 .btn {
   border: solid 2px #f4a460;
   width: 100px;
   height: 30px;
   text-align: center;
-  font-family: "Courier";
+  font-family: 'Courier';
   font-size: 18px;
   background: #f4a460;
-  color: tomato;
-}
+  color: tomato; }
 
 .btn:hover {
-  opacity: 0.5%;
-}
+  opacity: 0.5%; }
 
 .btn-p {
   text-align: center;
-  border-radius: 80%;
-}
+  border-radius: 80%; }
 
 .input-text {
   border: solid 2px lightgray;
-  width: -webkit-fill-available;
-}
+  width: -webkit-fill-available; }
+  @media (min-width: 320px) {
+    .input-text {
+      font-size: 25px; } }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6; }
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.button {
+  background: #e6a9c8;
+  padding: 0 2em;
+  color: #fff;
+  border: 0;
+  width: 500px;
+  height: 100px;
+  font-size: 45px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-weight: 900;
+  position: relative;
+  left: 400px;
+  top: 260px; }
+
+.button:hover {
+  background: #8b1636; }
+
+.modal {
+  /* display: none; */
+  /* position: fixed; */
+  position: absolute;
+  /* z-index: 1;  */
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  /* background-color: rgba(0,0,0,0.5);*/ }
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s; }
+
+.modal-header h2, .modal-footer h3 {
+  margin: 0; }
+
+.modal-header {
+  background: #e6a9c8;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; }
+
+.modal-header, .modal-close {
+  font-size: 25px; }
+
+.modal-body {
+  padding: 10px 20px; }
+
+.modal-footer {
+  background: #e6a9c8;
+  padding: 10px;
+  color: #fff;
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff; }
+
+.closeBtn:hover, .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.steps {
+  color: #db0038;
+  font-size: 25px; }
+
 @media (min-width: 320px) {
-  .input-text {
+  #total {
+    margin: 0;
+    font-size: 17px; } }
+
+.cooking-min {
+  display: flex;
+  margin: 0 30px; }
+
+@media (min-width: 320px) {
+  #prepMin {
+    color: #db0038;
+    font-size: 23px; } }
+
+@media (min-width: 320px) {
+  #totalMin {
+    color: #db0038;
+    font-size: 23px; } }
+
+@media (min-width: 320px) {
+  #recipe-image {
+    text-align: center; } }
+
+@media (min-width: 320px) {
+  #prep {
+    border-right-style: groove;
+    border-right-color: azure;
+    margin: 0 20px 0 30px;
+    padding-right: 10px;
+    font-size: 17px; } }
+
+@media (min-width: 320px) {
+  #recipe-name h1 {
+    text-align: center;
     font-size: 25px;
-  }
-}
+    color: #dc143c; } }
+
+@media (min-width: 320px) {
+  #recipe-imagepic {
+    width: 200px;
+    height: 200px; } }
+
+#recipe-inst ul, li {
+  list-style: none;
+  padding-left: 0; }
+
+@media (min-width: 320px) {
+  #recipe-inst li {
+    padding-left: 0;
+    margin: 10px 0;
+    font-size: 15px; } }
+@media (min-width: 768px) {
+  #recipe-inst li {
+    position: relative;
+    list-style-type: none !important;
+    /*ポチ消す*/
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    background: white;
+    vertical-align: middle;
+    color: #505050;
+    border-radius: 15px 0px 0px 15px;
+    /*左側の角丸く*/ } }
+
+@media (min-width: 320px) {
+  #recipe-inst li:before {
+    counter-increment: number;
+    content: counter(number) ".";
+    /* 以下は自由に装飾... */
+    padding-right: .5em;
+    font-weight: bold;
+    color: #db0038; } }
+@media (min-width: 768px) {
+  #recipe-inst li:before {
+    display: inline-block;
+    vertical-align: middle;
+    /*以下白丸つくる*/
+    content: '';
+    width: 1em;
+    height: 1em;
+    background: violet;
+    border-radius: 50%;
+    margin-right: 8px; } }
+
+@media (min-width: 320px) {
+  #ingredients-title {
+    color: #db0038;
+    font-size: 25px; } }
+
+#recipe-ingredients {
+  padding-left: 10px; }
+
+#recipe-ingredients li {
+  position: relative;
+  list-style-type: none !important;
+  /*ポチ消す*/
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  background: #ffdab9;
+  vertical-align: middle;
+  color: #505050;
+  border-radius: 15px 0px 0px 15px;
+  /*左側の角丸く*/ }
+
+#recipe-ingredientsul li::before {
+  display: inline-block;
+  vertical-align: middle;
+  /*以下白丸つくる*/
+  content: '';
+  width: 1em;
+  height: 1em;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 8px; }
+
+@media (min-width: 320px) {
+  .searchedResult {
+    text-align: left;
+    color: #dc143c; } }
+
+@media (min-width: 320px) {
+  #pairedwineList {
+    display: flex; } }
+
+@media (min-width: 320px) {
+  #PairedwineList h1 {
+    font-size: 20px;
+    background: #f0e68c;
+    color: tomato;
+    text-align: center; } }
+
+@media (min-width: 320px) {
+  .bestCount {
+    color: #dc143c;
+    width: 30px; } }
+
+@media (min-width: 320px) {
+  .bestWines {
+    font-size: 20px;
+    width: 250px; } }
+
+@media (min-width: 320px) {
+  #PairedwineList #list li {
+    display: flex; } }
+
+@media (min-width: 320px) {
+  #pairingText {
+    color: black;
+    border: solid 1px gray;
+    font-size: 15px;
+    text-align: left; } }
+
+@media (min-width: 320px) {
+  #wineName {
+    color: tomato;
+    text-align: center; } }
+
+#machedWineName {
+  text-align: center;
+  font-size: 20px;
+  border-bottom: solid 1px gray; }
+
+#matchedWineImage {
+  text-align: center; }
+
+.wineprice {
+  display: flex; }
+
+@media (min-width: 320px) {
+  .wineprice p {
+    padding: 10px 0px 5px 30px; } }
+
+@media (min-width: 320px) {
+  #winePriceTag {
+    text-shadow: 0 0 black;
+    font-size: 20px;
+    padding: 20px 5px;
+    color: red; } }
+
+@media (min-width: 320px) {
+  #matchedwineImageURL {
+    width: 250px; } }
+
+@media (min-width: 320px) {
+  .winecontent p {
+    font-size: 15px;
+    text-align: center; } }
+
+.search_container {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.3em;
+  width: 260px;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .search_container {
+      margin: 0 230px; } }
+  @media (min-width: 1024px) {
+    .search_container {
+      margin: 0 350px; } }
+
+.search_container input[type="text"] {
+  border: none;
+  height: 2.0em;
+  width: 190px; }
+
+.search_container input[type="text"]:focus {
+  outline: 0; }
+
+.search_container input[type="submit"] {
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  background: none;
+  color: #3879D9;
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  right: 0;
+  top: -10px;
+  outline: none; }
+
+@media (min-width: 768px) {
+  .winebtn {
+    display: none; } }
+
+.winebtn::after {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: '\f35a'; }
+
+@media (min-width: 320px) {
+  .desc-2 {
+    font-size: 11px; } }
+@media (min-width: 768px) {
+  .desc-2 {
+    text-align: center;
+    font-size: 13px; } }
+
+@media (min-width: 320px) {
+  #ingredients {
+    text-align: center;
+    border: solid 1px orange; } }
+
+@media (min-width: 320px) {
+  .recipe-pic {
+    width: 130px;
+    height: 130px; } }
+
+#list {
+  padding: 0; }
+
+@media (min-width: 320px) {
+  #list li {
+    display: flex; } }
+@media (min-width: 768px) {
+  #list li {
+    margin: 0 200px; } }
+
+@media (min-width: 320px) {
+  .recipe_title {
+    width: 120px;
+    padding: 30px 10px 0 10px; } }
+@media (min-width: 768px) {
+  .recipe_title {
+    width: 350px;
+    padding: 20px 10px; } }
+
+@media (min-width: 320px) {
+  .recipe-box {
+    display: flex;
+    margin: 5px; } }
+
+@media (min-width: 320px) {
+  #us {
+    position: relative;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545; } }
+
+@media (min-width: 320px) {
+  #us:after {
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #fff #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15); } }
+
+@media (min-width: 320px) {
+  #us p {
+    margin: 0;
+    padding: 0; } }
+
+#us a:link {
+  color: orange; }
+
+#us a:visited {
+  color: orange; }
 
 body {
   margin: 0;
   padding: 5px;
   background: #f5deb3;
-  font-family: "Courier";
-  color: #696969;
-}
+  font-family: 'Courier';
+  color: #696969; }
 
 #container {
   margin: 10px;
   padding: 10px;
   background: white;
   border: solid 1px lightgray;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-}
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); }
 
 .title {
-  text-align: center;
-}
+  text-align: center; }
 
 a, a:visited {
-  color: lightgray;
-}
+  color: lightgray; }
 
 /*# sourceMappingURL=app.css.map */

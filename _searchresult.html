@@ -1,4 +1,3 @@
-<!-- All the comments are for implementing with js. But we can uncomment the time to create our sass file -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,79 +5,69 @@
 	<title>ChinguRecipes</title>
 	<link rel="stylesheet" type="text/css" href="./sass/css/app.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
-	<header>
-		<nav>
-			<div class="nav-bar">
-				<input id="nav-input" type="checkbox" class="nav-unshown">
-				<label id="nav-open" for="nav-input"><span></span></label>
-				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
-				<div id="nav-content">
-						<ul class="links-container">
-								<li class="links">Entrees</li>
-								<li class="links">Main Course</li>
-								<li class="links">Dessert</li>
-								<li class="links">Appetizers</li>
-								<li class="links">Wines</li>
+	<div id="container">
+		<header class="header">
+			<nav>
+				<div class="nav-bar">
+					<input id="nav-input" type="checkbox" class="nav-unshown">
+					<label id="nav-open" for="nav-input"><span></span></label>
+					<a href="index.html"><img src="./images/logo.png" class="logo-image"></a>
+					<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+					<div id="nav-content">
+							<ul class="links-container">
+								<div class="nav-close-btn">&times;</div>
+								<li class="links"><a href="_aboutus.html">About Us</a></li>
+								<li class="links"><a href="_entrees.html">Products</a></li>
+								<li class="links"><a href="_appetizer.html">Pricing</a></li>
+								<li class="links"><a href="_dessert.html">Solutions</a></li>
+								<li class="links"><a href="_wine.html">Support</a></li>
+								<li class="links"><a href="_contact.html">Contact</a></li>
 							</ul>
+					</div>
 				</div>
-			</div>
-			<a href="index.html">
-					<h4 class="logo"><img src="./images/logo.png"></h4>
-				</a>
-		</nav>
-		<div class="title">
+				<ul class="links-container desktop-menu">
+<!--					<div class="nav-close-btn">&times;</div>
+					<li class="links">About Us</li>
+					<li class="links"><a href="_entrees.html">Products</a></li>
+					<li class="links"><a href="_appetizer.html">Pricing</a></li>
+					<li class="links"><a href="_dessert.html">Solutions</a></li>
+					<li class="links"><a href="_wine.html">Support</a></li>
+					<li class="links"><a href="_contact.html">Contact</a></li>
+					<a href="index.html">
+							<h4 class="logo"><img src="./images/logo.png" class="logo-image-lg"></h4>
+						</a>-->
+				</ul>
+					
+			</nav>
 			<!-- We can put a carousel in the background of the header -->
-			<a href="index.html"><h1>Toucan's Recipes</h1></a>
-		</div>
-		<div class="search-container">
-			<!-- <form action="#" method="get">
-				<label for="search-input"></label>
-				<input type="search" id="search-input" class="search-input" placeholder="Search...">
-			</form> -->
-		</div>
-	</header>
-    <div class="menu-card">
-			<!--
-			<div class="menu-img-container">
-				<img class="card-img" src="photo source" alt="menu picture">
+			<!-- <div class="title">
+				<a href="index.html"><h1>Toucan's Recipes</h1></a>
+			</div> -->
+		<div id="ingredients"></div>
+			<div id="recipe-list">
+				<ul id="list">
+					
+				</ul>
 			</div>
-			<div class="card-info-container">
-				<h3 id="name" class="card-name cap">Menu Name</h3>
-			</div>
-			-->
-    </div>
-    <div class="pictures-container">
-		<!--
-			<div class="recipe-img-container">
-					<img class="big-recipe-img" src="recipes image url" alt="recipes photo'>
-					<img class="little-recipe-img" src="recipes image url" alt="recipes photo">
-			</div>
-		-->
-    </div>
-    <div class="more-info">
-			<!--
-			<a href="#">blog</a>
-			<a href="#">Favorites</a>
-			-->
-    </div>
     <footer>
-			
-			<ul class="footer">
-					<li class="infos">About us</li>
-					<li class="infos">Nutriscore</li>
-					<li class="infos">Contact</li>
-				</ul>
-				<ul class="social network">
-					<li class="social">facebook logo</li>
-					<li class="social">twitter logo</li>
-					<li class="social">instagram logo</li>
-					<li class="social">pinterest logo</li>
-				</ul>
+			<ul class="sns">
+				<li class="social"><i class="fab fa-facebook facebook-icon"></i></li>
+				<li class="social"><i class="fab fa-twitter twitter-icon"></i></li>
+				<li class="social"><i class="fab fa-instagram insta-icon"></i></li>
+				<li class="social"><i class="fab fa-pinterest pinterest-icon"></i></li>
+			</ul>
 	</footer>
-	<script src="js/script.js"></script>
 	<script src="js/HtmlElements.js"></script>
 	<script src="js/Api.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/recipe_api.js"></script>
+	<script src="js/searchresult.js"></script>
 </body>
 </html>
