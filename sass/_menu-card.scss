@@ -56,7 +56,10 @@ $lg: 1024px;
 
 .menu-card {
   display: flex;
-
+  @include sm {
+    display: none;
+  }
+  
   @include md {
     width: 500px;
     padding: 0 100px;

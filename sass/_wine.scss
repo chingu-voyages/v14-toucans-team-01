@@ -148,9 +148,8 @@
 }
 
 .winebtn {
-  @include md {
-    display: none;
-  }
+  display: none;
+
 }
 
 .winebtn::after {

@@ -147,7 +147,7 @@
       list-style: none; } }
   @media (min-width: 768px) {
     .links-container {
-      display: flex; } }
+      display: none; } }
 
 .links-container li {
   color: #f4a460; }
@@ -229,6 +229,9 @@
 
 .menu-card {
   display: flex; }
+  @media (min-width: 320px) {
+    .menu-card {
+      display: none; } }
   @media (min-width: 768px) {
     .menu-card {
       width: 500px;
@@ -763,9 +766,8 @@ body {
   top: -10px;
   outline: none; }
 
-@media (min-width: 768px) {
-  .winebtn {
-    display: none; } }
+.winebtn {
+  display: none; }
 
 .winebtn::after {
   font-family: "Font Awesome 5 Free";
