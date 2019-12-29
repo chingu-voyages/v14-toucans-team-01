@@ -127,7 +127,7 @@ $lg: 1024px;
 }
 
 /*チェックが入ったらもろもろ表示*/
-#nav-input:checked ~ #nav-close {
+#nav-input:checked ~ #nav-close{
   display: block;/*カバーを表示*/
   opacity: .5;
 }
@@ -185,12 +185,8 @@ $lg: 1024px;
     @include sm {
     list-style: none;
     }
-    // @include md {
-    //   margin: 0;
-    //   padding: 5px;
-    // }
     @include md {
-      display: flex;
+      display: none;
     }
     
   }
@@ -245,4 +241,3 @@ $lg: 1024px;
         }
       }
   }
-
