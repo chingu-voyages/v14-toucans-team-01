@@ -75,26 +75,37 @@ $lg: 1024px;
 
 
 .random-menu-disp {
-  display: flex;
-  flex-wrap: wrap;
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @include lg {
-    margin: 0 70px;
+    padding: 10px 35px;
   }
 }
+
 .random-menu-card {
-display: flex;
+
   @include sm {
-   
+    display: flex;
+    width: 260px;
+    height: 100px;
+    margin: 5px;
+    border: solid 1px orange;
   }
+
   @include md {
-    width: 235px;
-    height: 160px;
+    border: solid 1px orange;
+    margin: 10px;
+    display: block;
+    width: 155px;
+    height: 230px;
   }
   @include lg {
-    width: 200px;
-    height: 200px;
-    margin: 30px;
+    width: 208px;
+    height: 300px;
+    margin: 5px;
   }
 }
 
@@ -102,23 +113,43 @@ display: flex;
   // box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
   border: solid 2px beige;
   @include sm {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+  }
+
+  @include md {
+    width: 155px;
+    height: 155px;
   }
   @include lg {
-    width: 200px;
+    width: 204px;
     height: 200px;
   }
 }
 
 .card-info-container {
   @include sm {
-    width: 150px;
-    height: 80px;
+    width: 160px;
+    height: 100px;
     text-align: center;
     color: tomato;
-    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); */
-    font-size: 15px;
+    font-size: 11px;
+    padding: 0 5px;
+  }
+  @include md {
+    width: 155px;
+    height: 80px;
+  }
+}
+
+.menu-img-container  {
+  @include sm {
+    width: 100px;
+    height: 100px;
+  }
+  @include md{
+    margin: 0;
+    height: 155px;
   }
   @include lg {
     width: 200px;
@@ -126,24 +157,28 @@ display: flex;
   }
 }
 
-.menu-img-container  {
-  margin-bottom: 20px;
-  @include md{
+.menu-img-container p {
+  @include sm {
     margin: 0;
+  }
+  @include md {
+    margin: 0;
+    height: 155px;
   }
 }
 
-.card-name {
-  @include sm {
-    width: 100px;
-    height: 150px;
-    margin: 10px;
+#name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  @include md {
+    margin: 0;
     font-size: 13px;
     text-align: left;
+    padding: 5px;
   }
 
-  @include md {
-    width: 70px;
-    font-size: 11px;
+  @include lg {
+    font-size: 15px;
   }
 }
