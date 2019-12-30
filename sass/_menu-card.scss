@@ -59,8 +59,9 @@ $lg: 1024px;
   @include sm {
     display: none;
   }
-  
+
   @include md {
+    display: inline-flex;
     width: 500px;
     padding: 0 100px;
   }
