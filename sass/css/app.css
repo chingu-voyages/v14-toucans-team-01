@@ -338,15 +338,23 @@
       font-size: 15px; } }
 
 @media (min-width: 320px) {
-  .footer {
-    list-style: none;
+  footer {
     font-size: 13px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0; } }
+    padding: 0;
+    background: peachpuff;
+    text-align: center; } }
 @media (min-width: 768px) {
-  .footer {
+  footer {
     font-size: 20px; } }
+
+@media (min-width: 320px) {
+  .footer-ul {
+    list-style: none;
+    display: flex; } }
+
+@media (min-width: 320px) {
+  .footer-list {
+    margin: 5px; } }
 
 @media (min-width: 320px) {
   .infos {
@@ -360,6 +368,9 @@
 
 .sns {
   display: flex; }
+  @media (min-width: 320px) {
+    .sns {
+      margin: 5px 50px; } }
   @media (min-width: 768px) {
     .sns {
       width: 180px;
@@ -385,25 +396,18 @@
     font-size: 20px; } }
 
 .twitter-icon {
-  font-size: 35px;
   color: #55acee;
   margin-left: 10px; }
+  @media (min-width: 320px) {
+    .twitter-icon {
+      font-size: 25px; } }
 
 .facebook-icon {
-  font-size: 35px;
   color: #315096;
   margin-left: 10px; }
-
-.insta-icon {
-  /*アイコンの背景*/
-  font-size: 35px;
-  color: black;
-  margin-left: 10px; }
-
-.pinterest-icon {
-  font-size: 35px;
-  color: #ce0f19;
-  margin-left: 10px; }
+  @media (min-width: 320px) {
+    .facebook-icon {
+      font-size: 25px; } }
 
 .footer-menu {
   text-align: center; }
