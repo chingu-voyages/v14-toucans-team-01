@@ -222,7 +222,8 @@
 
 @media (min-width: 320px) {
   .image-space {
-    margin-right: 10px; } }
+    margin-right: 10px;
+    display: flex; } }
 @media (min-width: 1024px) {
   .image-space {
     margin-right: 30px; } }
@@ -234,9 +235,9 @@
       display: none; } }
   @media (min-width: 768px) {
     .menu-card {
-      display: inline-flex;
-      width: 500px;
-      padding: 0 100px; } }
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 110px; } }
   @media (min-width: 1024px) {
     .menu-card {
       width: 600px;
@@ -245,6 +246,13 @@
 .food-head {
   text-align: center;
   font-size: 15px; }
+  @media (min-width: 320px) {
+    .food-head {
+      width: 150px;
+      padding-top: 25px;
+      color: orange;
+      border-bottom: dashed 1px lightgray;
+      margin-bottom: 10px; } }
 
 @media (min-width: 320px) {
   .random-menu-disp {
@@ -336,6 +344,12 @@
   @media (min-width: 1024px) {
     #name {
       font-size: 15px; } }
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 110px; } }
 
 @media (min-width: 320px) {
   footer {
@@ -812,7 +826,10 @@ body {
 @media (min-width: 320px) {
   .recipe_title {
     width: 120px;
-    padding: 30px 10px 0 10px; } }
+    padding: 5px;
+    font-size: 13px;
+    color: orange;
+    border: dashed 1px coral; } }
 @media (min-width: 768px) {
   .recipe_title {
     width: 350px;
@@ -872,6 +889,6 @@ body {
   text-align: center; }
 
 a, a:visited {
-  color: lightgray; }
+  color: coral; }
 
 /*# sourceMappingURL=app.css.map */

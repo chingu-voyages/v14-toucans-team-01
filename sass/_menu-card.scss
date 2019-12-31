@@ -48,7 +48,11 @@ $lg: 1024px;
 .image-space {
   @include sm {
     margin-right: 10px;
+    display: flex;
   }
+  // @include md {
+  //   display: block;
+  // }
   @include lg {
     margin-right: 30px;
   } 
@@ -61,9 +65,9 @@ $lg: 1024px;
   }
 
   @include md {
-    display: inline-flex;
-    width: 500px;
-    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 110px;
   }
 
   @include lg {
@@ -75,6 +79,13 @@ $lg: 1024px;
 .food-head {
   text-align: center;
   font-size: 15px;
+  @include sm {
+    width: 150px;
+    padding-top: 25px;
+    color: orange;
+    border-bottom: dashed 1px lightgray;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -184,5 +195,13 @@ $lg: 1024px;
 
   @include lg {
     font-size: 15px;
+  }
+}
+
+.menu {
+  @include md {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 110px;
   }
 }
