@@ -216,6 +216,11 @@
     /* 横長画像の左上を基準に表示 */
     margin-bottom: 10px;
     border: solid 1px lightgray; } }
+@media (min-width: 768px) {
+  .image {
+    margin: 0;
+    width: 60px;
+    height: 60px; } }
 
 .image:hover {
   opacity: 0.5; }
@@ -352,6 +357,27 @@
     margin: 0 110px; } }
 
 @media (min-width: 320px) {
+  .menu-list {
+    display: none; } }
+@media (min-width: 768px) {
+  .menu-list {
+    display: flex;
+    margin: 0 150px;
+    border-top: dotted 3px orange;
+    padding-top: 10px;
+    border-bottom: dotted 3px orange; } }
+
+@media (min-width: 768px) {
+  .menulist {
+    width: 70px;
+    margin: 5px; } }
+
+@media (min-width: 768px) {
+  .food-head-list {
+    font-size: 13px;
+    text-align: center; } }
+
+@media (min-width: 320px) {
   footer {
     font-size: 13px;
     padding: 0;
@@ -365,6 +391,10 @@
   .footer-ul {
     list-style: none;
     display: flex; } }
+@media (min-width: 768px) {
+  .footer-ul {
+    padding: 0;
+    margin: 0 220px; } }
 
 @media (min-width: 320px) {
   .footer-list {
@@ -742,6 +772,9 @@ body {
   #matchedwineImageURL {
     width: 250px; } }
 
+.winecontent {
+  text-align: center; }
+
 @media (min-width: 320px) {
   .winecontent p {
     font-size: 15px;
@@ -802,6 +835,10 @@ body {
   .desc-2 {
     text-align: center;
     font-size: 13px; } }
+
+@media (min-width: 768px) {
+  .wineimage {
+    width: 300px; } }
 
 @media (min-width: 320px) {
   #ingredients {

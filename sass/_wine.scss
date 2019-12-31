@@ -93,6 +93,9 @@
     width: 250px;
   }
 }
+.winecontent {
+  text-align: center;
+}
 
 .winecontent p {
   @include sm {
@@ -167,5 +170,11 @@
   @include md {
     text-align: center;
     font-size: 13px;
+  }
+}
+
+.wineimage {
+  @include md {
+    width: 300px;
   }
 }

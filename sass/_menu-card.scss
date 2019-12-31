@@ -30,6 +30,11 @@ $lg: 1024px;
     // box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
     border: solid 1px lightgray; 
   }
+  @include md {
+    margin: 0;
+    width: 60px;
+    height: 60px;
+  }
   @include lg {
     // width:  180px;       /* ※縦横を同値に */ 
     // height: 180px;       /* ※縦横を同値に */ 
@@ -203,5 +208,32 @@ $lg: 1024px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 110px;
+  }
+}
+
+.menu-list {
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: flex;
+    margin: 0 150px;
+    border-top: dotted 3px orange;
+    padding-top: 10px;
+    border-bottom: dotted 3px orange;
+  }
+}
+
+.menulist {
+  @include md {
+    width: 70px;
+    margin: 5px;
+  }
+}
+
+.food-head-list {
+  @include md {
+    font-size: 13px;
+    text-align: center;
   }
 }
