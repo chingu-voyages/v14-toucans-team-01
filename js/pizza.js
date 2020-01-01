@@ -1,17 +1,3 @@
-let ele = sessionStorage.ingredients;
-let elements = ele.split(" ");
-
-let name = "";
-let ids = "";
-console.log(elements.length);
-if(elements.length >= 2) {
-  for(let i=0; i<elements.length-1; i++) {
-    name += elements[i] + "%252C";
-  }
-} else {
-  name = ele;
-}
-console.log(name);
 
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=1000&ranking=1&ignorePantry=false&ingredients=pizza", {
 	"method": "GET",
