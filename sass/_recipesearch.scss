@@ -3,6 +3,11 @@
     text-align: center;
     border: solid 1px orange;
   }
+  @include lg {
+    width: 500px;
+    margin: 10px 200px;
+    background: orange;
+  }
 }
 
 .recipe-pic {

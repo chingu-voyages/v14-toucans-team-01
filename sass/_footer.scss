@@ -42,6 +42,10 @@ footer {
     padding: 0;
     margin: 0 220px;
   }
+  @include lg {
+    margin: 0 360px;
+
+  }
 }
 
 .footer-list {
@@ -49,6 +53,7 @@ footer {
     margin: 5px;
   }
 }
+
 .infos {
   @include sm {
     margin-right: 20px;
@@ -77,6 +82,7 @@ footer {
     padding: 0 200px 0 400px;
   }
 }
+
 .social {
   @include sm {
     display: flex;
@@ -113,7 +119,6 @@ footer {
     font-size: 25px; 
   }     
 } 
-
 
 .footer-menu {
   text-align: center;
