@@ -7,9 +7,9 @@ const createCarousel = (container) =>{
     const liOneEl = new HtmlElements("li", {"class": "splide__slide", "width": "100%"}, ulElement).newElement();
     const liTwoEl = new HtmlElements("li", {"class": "splide__slide", "width": "100%"}, ulElement).newElement();
     const liThreeEl = new HtmlElements("li", {"class": "splide__slide", "width": "100%"}, ulElement).newElement();
-    const picture1 = new HtmlElements("img", {"src": "./images/Appetizer.jpg"}, liOneEl).newElement();
-    const picture2 = new HtmlElements("img", {"src": "./images/Entree.jpg"}, liTwoEl).newElement();
-    const picture3= new HtmlElements("img", {"src": "./images/Dessert.jpg"},liThreeEl).newElement();
+    const picture1 = new HtmlElements("img", {"src": "./images/Appetizer.jpg", "width": "100%", "height": "100%"}, liOneEl).newElement();
+    const picture2 = new HtmlElements("img", {"src": "./images/Entree.jpg", "width": "100%", "height": "100%"}, liTwoEl).newElement();
+    const picture3= new HtmlElements("img", {"src": "./images/Dessert.jpg", "width": "100%", "height": "100%"},liThreeEl).newElement();
     carousel();
 };
 
