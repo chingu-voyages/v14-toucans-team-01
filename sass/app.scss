@@ -39,9 +39,7 @@ body {
 }
 
 .title h1 {
-  @include lg {
-    margin: 10px 330px 10px 250px;
-  }
+  text-align: center;
 }
 a, a:visited {
   color: coral;

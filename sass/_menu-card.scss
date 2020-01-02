@@ -229,7 +229,7 @@ $lg: 1024px;
     border-bottom: dotted 3px orange;
   }
   @include lg {
-    margin: 0 290px 0 250px;
+    margin: 10px 290px;
     width: 400px;
   }
 }

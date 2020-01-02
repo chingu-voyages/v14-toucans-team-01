@@ -65,6 +65,10 @@ text-align: center
   }
 }
 
+#recipe-inst {
+  padding: 0;
+}
+
 #recipe-inst ul, li {
     // counter-reset: item;
     list-style: none;
@@ -72,52 +76,47 @@ text-align: center
 }
 
 #recipe-inst li {
+  display: flex;
   @include sm {
     padding-left: 0;
     margin: 10px 0;
     font-size: 15px;
   }
-  
-  @include md {
-    position: relative;
-    list-style-type: none!important;/*ポチ消す*/
-    padding: 0.5em 0.5em 0.5em 0.5em;
-    margin-bottom: 5px;
-    line-height: 1.5;
-    background: white;
-    vertical-align: middle;
-    color: #505050;
-    border-radius: 15px 0px 0px 15px;/*左側の角丸く*/
-  }
-  
 }
 
-#recipe-inst li:before{ 
+.inst-count {
   @include sm {
-    counter-increment: number;
-    content: counter(number)".";
-      /* 以下は自由に装飾... */
-      padding-right: .5em;
-      font-weight: bold;
-      color: #db0038;
-  }
-  @include md {
-    display:inline-block; 
-    vertical-align: middle;
-    /*以下白丸つくる*/
-    content:'';
-    width:1em;
-    height: 1em;
-    background: violet;
-    border-radius: 50%;
-    margin-right: 8px;
+    color: #db0038;
+    padding-right: 20px;
   }
 }
+// #recipe-inst li:before{ 
+//   @include sm {
+//     counter-increment: number;
+//     content: counter(number)".";
+//       /* 以下は自由に装飾... */
+//       padding-right: .5em;
+//       font-weight: bold;
+//       color: #db0038;
+//   }
+//   @include md {
+//     display:inline-block; 
+//     vertical-align: middle;
+//     /*以下白丸つくる*/
+//     content:'';
+//     width:1em;
+//     height: 1em;
+//     background: violet;
+//     border-radius: 50%;
+//     margin-right: 8px;
+//   }
+// }
 
 #ingredients-title {
   @include sm {
     color: #db0038;
     font-size: 25px;
+    text-align: center;
   }
   @include md {
     margin: 20px 260px;

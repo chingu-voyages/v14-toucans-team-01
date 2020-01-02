@@ -62,7 +62,7 @@ console.log(recipe_id);
       const liLast = document.createElement('li');
       let ele_name = recipe_list[0].analyzedInstructions[0].steps[i].step;
       // console.log(ele_name);
-      liLast.innerHTML = ele_name;
+      liLast.innerHTML = `<div class=\"inst-count\">${i+1}.</div> ${ele_name}`;
       element.appendChild(liLast);
     }
   } else {

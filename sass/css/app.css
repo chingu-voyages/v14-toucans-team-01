@@ -372,7 +372,7 @@
     border-bottom: dotted 3px orange; } }
 @media (min-width: 1024px) {
   .menu-list {
-    margin: 0 290px 0 250px;
+    margin: 10px 290px;
     width: 400px; } }
 
 @media (min-width: 768px) {
@@ -647,53 +647,31 @@ body {
     width: 200px;
     height: 200px; } }
 
+#recipe-inst {
+  padding: 0; }
+
 #recipe-inst ul, li {
   list-style: none;
   padding-left: 0; }
 
-@media (min-width: 320px) {
-  #recipe-inst li {
-    padding-left: 0;
-    margin: 10px 0;
-    font-size: 15px; } }
-@media (min-width: 768px) {
-  #recipe-inst li {
-    position: relative;
-    list-style-type: none !important;
-    /*ポチ消す*/
-    padding: 0.5em 0.5em 0.5em 0.5em;
-    margin-bottom: 5px;
-    line-height: 1.5;
-    background: white;
-    vertical-align: middle;
-    color: #505050;
-    border-radius: 15px 0px 0px 15px;
-    /*左側の角丸く*/ } }
+#recipe-inst li {
+  display: flex; }
+  @media (min-width: 320px) {
+    #recipe-inst li {
+      padding-left: 0;
+      margin: 10px 0;
+      font-size: 15px; } }
 
 @media (min-width: 320px) {
-  #recipe-inst li:before {
-    counter-increment: number;
-    content: counter(number) ".";
-    /* 以下は自由に装飾... */
-    padding-right: .5em;
-    font-weight: bold;
-    color: #db0038; } }
-@media (min-width: 768px) {
-  #recipe-inst li:before {
-    display: inline-block;
-    vertical-align: middle;
-    /*以下白丸つくる*/
-    content: '';
-    width: 1em;
-    height: 1em;
-    background: violet;
-    border-radius: 50%;
-    margin-right: 8px; } }
+  .inst-count {
+    color: #db0038;
+    padding-right: 20px; } }
 
 @media (min-width: 320px) {
   #ingredients-title {
     color: #db0038;
-    font-size: 25px; } }
+    font-size: 25px;
+    text-align: center; } }
 @media (min-width: 768px) {
   #ingredients-title {
     margin: 20px 260px; } }
@@ -973,9 +951,8 @@ body {
 .title {
   text-align: center; }
 
-@media (min-width: 1024px) {
-  .title h1 {
-    margin: 10px 330px 10px 250px; } }
+.title h1 {
+  text-align: center; }
 
 a, a:visited {
   color: coral; }
