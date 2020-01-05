@@ -3,6 +3,11 @@
     text-align: center;
     border: solid 1px orange;
   }
+  @include lg {
+    width: 500px;
+    margin: 10px 200px;
+    background: orange;
+  }
 }
 
 .recipe-pic {
@@ -28,7 +33,10 @@
 .recipe_title {
   @include sm {
     width: 120px;
-    padding: 30px 10px 0 10px;
+    padding: 5px;
+    font-size: 13px;
+    color: orange;
+    border: dashed 1px coral;
   }
 
   @include md {

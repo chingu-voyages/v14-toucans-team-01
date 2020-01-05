@@ -20,18 +20,38 @@ $lg: 1024px;
   }
 }
 
-.footer {
+footer {
   @include sm {
-  list-style: none;
   font-size: 13px;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
+  background: peachpuff;
+  text-align: center;
   }
   
   @include md {
     font-size: 20px;
     }
+}
+
+.footer-ul {
+  @include sm {
+    list-style: none;
+    display: flex;
+  }
+  @include md {
+    padding: 0;
+    margin: 0 220px;
+  }
+  @include lg {
+    margin: 0 360px;
+
+  }
+}
+
+.footer-list {
+  @include sm {
+    margin: 5px;
+  }
 }
 
 .infos {
@@ -50,7 +70,9 @@ $lg: 1024px;
 
 .sns {
   display: flex;
-
+  @include sm {
+    margin: 5px 50px;
+  }
   @include md {
     width: 180px;
     padding: 0 200px 0 250px;
@@ -60,6 +82,7 @@ $lg: 1024px;
     padding: 0 200px 0 400px;
   }
 }
+
 .social {
   @include sm {
     display: flex;
@@ -80,29 +103,22 @@ $lg: 1024px;
   }
 }
 
-.twitter-icon { 
-  font-size: 35px; 
+.twitter-icon {
+  @include sm {
+    font-size: 25px; 
+  }
+  
   color: #55acee; 
   margin-left: 10px;
 } 
 
-.facebook-icon { 
-  font-size: 35px; 
+.facebook-icon {
   color: #315096; 
-  margin-left: 10px;         
+  margin-left: 10px;   
+  @include sm {
+    font-size: 25px; 
+  }     
 } 
-
-.insta-icon {/*アイコンの背景*/ 
-  font-size: 35px; 
-  color: black; 
-  margin-left: 10px;  
-} 
-
-.pinterest-icon {
-  font-size: 35px; 
-  color: #ce0f19; 
-  margin-left: 10px;     
-}
 
 .footer-menu {
   text-align: center;

@@ -30,6 +30,11 @@ $lg: 1024px;
     // box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
     border: solid 1px lightgray; 
   }
+  @include md {
+    margin: 0;
+    width: 60px;
+    height: 60px;
+  }
   @include lg {
     // width:  180px;       /* ※縦横を同値に */ 
     // height: 180px;       /* ※縦横を同値に */ 
@@ -48,9 +53,13 @@ $lg: 1024px;
 .image-space {
   @include sm {
     margin-right: 10px;
+    display: flex;
   }
+  // @include md {
+  //   display: block;
+  // }
   @include lg {
-    margin-right: 30px;
+
   } 
 } 
 
@@ -59,21 +68,33 @@ $lg: 1024px;
   @include sm {
     display: none;
   }
-  
+
   @include md {
-    width: 500px;
-    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 110px;
   }
 
   @include lg {
     width: 600px;
-    padding: 0 180px;
+    padding: 0;
+    margin: 0 220px;
   }
 } 
 
 .food-head {
   text-align: center;
   font-size: 15px;
+  @include sm {
+    width: 150px;
+    padding-top: 25px;
+    color: orange;
+    border-bottom: dashed 1px lightgray;
+    margin-bottom: 10px;
+  }
+  @include lg {
+    width: 120px;
+  }
 }
 
 
@@ -89,17 +110,16 @@ $lg: 1024px;
 }
 
 .random-menu-card {
+  border: dotted 1px orange;
 
   @include sm {
     display: flex;
     width: 260px;
     height: 100px;
     margin: 5px;
-    border: solid 1px orange;
   }
 
   @include md {
-    border: solid 1px orange;
     margin: 10px;
     display: block;
     width: 155px;
@@ -183,5 +203,47 @@ $lg: 1024px;
 
   @include lg {
     font-size: 15px;
+  }
+}
+
+.menu {
+  @include md {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 110px;
+  }
+  @include lg {
+    margin: 0 190px;
+  }
+}
+
+.menu-list {
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: flex;
+    margin: 0 150px;
+    border-top: dotted 3px orange;
+    padding-top: 10px;
+    border-bottom: dotted 3px orange;
+  }
+  @include lg {
+    margin: 10px 290px;
+    width: 400px;
+  }
+}
+
+.menulist {
+  @include md {
+    width: 70px;
+    margin: 5px;
+  }
+}
+
+.food-head-list {
+  @include md {
+    font-size: 13px;
+    text-align: center;
   }
 }

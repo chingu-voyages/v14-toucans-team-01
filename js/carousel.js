@@ -20,6 +20,4 @@ const carousel = () =>{
         autoPlay: true,
         lazyLoad: 'nearby'
     }).mount();
-}
-
-
+  }

@@ -3,11 +3,18 @@ let elements = ele.split(" ");
 
 let name = "";
 let ids = "";
-for(let i=0; i<elements.length-1; i++) {
-  name += elements[i] + "%252C";
+console.log(elements.length);
+if(elements.length >= 2) {
+  for(let i=0; i<elements.length-1; i++) {
+    name += elements[i] + "%252C";
+  }
+} else {
+  name = ele;
 }
+console.log(name);
 
 // https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=5&ranking=1&ignorePantry=false&ingredients=
+// https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=1000&ranking=1&ignorePantry=false&ingredients=" + name
 
 let URL = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=1000&ranking=1&ignorePantry=false&ingredients=" + name;
 
