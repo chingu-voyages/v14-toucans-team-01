@@ -7,11 +7,13 @@ Voyage-14 | https://chingu.io/ | Twitter: https://twitter.com/ChinguCollabs
 ## --- Description of webapp ---
 ![スクリーンショット 2020-01-06 20 04 48](https://user-images.githubusercontent.com/55519118/71814472-d180fe00-30bf-11ea-89fb-317e2895b31c.png)![スクリーンショット 2020-01-06 20 03 26](https://user-images.githubusercontent.com/55519118/71814424-b2826c00-30bf-11ea-91fc-0e833870d49c.png)
 
-Our webapp is recipe website which you can search any recipes by ingredients.
+Our website is recipe website which you can search any recipes by ingredients.
 
-The webapp is using Spooncular API to fetch already existing recipes instead of using database to store and register recipes by anonymous people. 
+The webapp is using Spooncular API to fetch existing recipes. 
 
-This API allows you to find by ingredients and also wine pairing for specific foods (such as cheddar)
+# Note: The website is not allowing to search by recipe name such as "quiche" or "soup".
+
+This site allows you to find by ingredients and also wine pairing for specific foods (such as cheddar)
 On the top page, it shows the random top-ranking recipes which attracts people to find more.
 
 ## Demo page: [here](https://v14-toucans-master.netlify.com/)
