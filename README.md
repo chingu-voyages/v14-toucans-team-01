@@ -5,6 +5,8 @@ Voyage-14 | https://chingu.io/ | Twitter: https://twitter.com/ChinguCollabs
 ![logo](https://user-images.githubusercontent.com/55519118/71812862-9b417f80-30bb-11ea-96a8-0cfb460a3627.png)
 
 ## --- Description of webapp ---
+![スクリーンショット 2020-01-06 20 01 06](https://user-images.githubusercontent.com/55519118/71814327-68998600-30bf-11ea-8d16-2af8379d2045.png)
+
 Our webapp is recipe website which you can search any recipes by ingredients.
 
 The webapp is using Spooncular API to fetch already existing recipes instead of using database to store and register recipes by anonymous people. 
