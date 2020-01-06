@@ -1,8 +1,5 @@
-# v14-toucans-team-01
+# v14-toucans-team-01 || Toucan's Recipe
 Voyage-14 | https://chingu.io/ | Twitter: https://twitter.com/ChinguCollabs
-
-## Demo page: [here](https://v14-toucans-master.netlify.com/)
-## Twitter page: [here](https://twitter.com/toucansrecipes)
 
 ### Toucans-Recipe
 
@@ -15,6 +12,9 @@ The webapp is using Spooncular API to fetch already existing recipes instead of 
 
 This API allows you to find by ingredients and also wine pairing for specific foods (such as cheddar)
 On the top page, it shows the random top-ranking recipes which attracts people to find more.
+
+## Demo page: [here](https://v14-toucans-master.netlify.com/)
+## Twitter page: [here](https://twitter.com/toucansrecipes)
 
 ## The used functions in this webapp:
 
