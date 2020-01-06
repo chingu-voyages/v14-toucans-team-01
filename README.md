@@ -25,6 +25,10 @@ We have learned and mastered below JS functions by making this app:
 *Sass
 
 ##API
+https://github.com/chingu-voyages/v14-toucans-team-01/edit/master/README.md
+We used [spooncularAPI](https://spoonacular.com/food-api) to fetch recipe data.
+The reason behind we chose this API is because we still couldn't build DB and we didn't have enough time to put enough data into it.
 
-We used ##[spooncularAPI](https://spoonacular.com/food-api) to fetch recipe data.
+This API allows you to fetch any recipes by ingredients and sory by ranking or more. 
+(though we didn't have enought time to specify these options sadly...)
 
