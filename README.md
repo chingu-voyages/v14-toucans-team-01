@@ -2,7 +2,7 @@
 Voyage-14 | https://chingu.io/ | Twitter: https://twitter.com/ChinguCollabs
 
 ## Demo page: [here](https://v14-toucans-master.netlify.com/)
-## Twitter page: here
+## Twitter page: [here](https://twitter.com/toucansrecipes)
 
 ### Toucans-Recipe
 
