@@ -2,6 +2,7 @@
 Voyage-14 | https://chingu.io/ | Twitter: https://twitter.com/ChinguCollabs
 
 ### Toucans-Recipe
+![logo](https://user-images.githubusercontent.com/55519118/71812862-9b417f80-30bb-11ea-96a8-0cfb460a3627.png)
 
 ## --- Description of webapp ---
 Our webapp is recipe website which you can search any recipes by ingredients.
