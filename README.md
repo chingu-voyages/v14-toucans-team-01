@@ -24,8 +24,9 @@ We have learned and mastered below JS functions by making this app:
 *web local/session storage (to pass user's searched result between different HTML files)
 *Sass
 
-##API
-https://github.com/chingu-voyages/v14-toucans-team-01/edit/master/README.md
+## API
+![71RdAdg3TkL _US230_](https://user-images.githubusercontent.com/55519118/71813722-bf9e5b80-30bd-11ea-8d66-cf0d2c026820.jpg)
+
 We used [spooncularAPI](https://spoonacular.com/food-api) to fetch recipe data.
 The reason behind we chose this API is because we still couldn't build DB and we didn't have enough time to put enough data into it.
 
