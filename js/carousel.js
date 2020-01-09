@@ -1,3 +1,4 @@
+
 const createCarousel = (container) =>{
   const carouselSection = new HtmlElements("div", {"class": "container grid lg mt-2 mb-2", "id": "carousel"}, container).newElement();
   const carouselDiv = new HtmlElements("div", {"class": "splide", "id": "splide"}, carouselSection).newElement()
@@ -13,10 +14,10 @@ const createCarousel = (container) =>{
 };
 
 const carousel = () =>{
-  new Splide("#splide", {
-      type: "loop",
-      perPage: 1,
-      autoPlay: true,
-      lazyLoad: 'nearby'
-  }).mount();
-}
+    new Splide("#splide", {
+        type: "loop",
+        perPage: 1,
+        autoPlay: true,
+        lazyLoad: 'nearby'
+    }).mount();
+  }

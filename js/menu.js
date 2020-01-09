@@ -1,7 +1,7 @@
 
 const navbar = document.querySelector(".desktop-menu");
 const header = document.querySelector(".header");
-const carouselContainer= document.querySelector("#slideshow");
+const carouselContainer= document.querySelector("#carousel");
 const linkName = [
     {
         nameTag: "About Us",
