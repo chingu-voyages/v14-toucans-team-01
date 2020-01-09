@@ -1,8 +1,8 @@
+import key from "./define.js";
 let ele = sessionStorage.ingredients;
 let elements = ele.split(" ");
 
 let name = "";
-let ids = "";
 console.log(elements.length);
 if(elements.length >= 2) {
   for(let i=0; i<elements.length-1; i++) {
@@ -25,7 +25,7 @@ fetch(URL, {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-		"x-rapidapi-key": "d66508729fmshb62d7475c06e5f5p19fd55jsndb6ff2ea2b05"
+		"x-rapidapi-key": key
 	}
 })
 .then((response) => {

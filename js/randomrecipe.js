@@ -1,5 +1,4 @@
 import key from "./define.js";
-console.log(key);
 
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=5&tags=vegetarian%2Cdessert", {
 	"method": "GET",

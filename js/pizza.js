@@ -1,9 +1,10 @@
+import key from "./define.js";
 
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=1000&ranking=1&ignorePantry=false&ingredients=pizza", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-		"x-rapidapi-key": "d66508729fmshb62d7475c06e5f5p19fd55jsndb6ff2ea2b05"
+		"x-rapidapi-key": key
 	}
 })
 .then((response) => {
