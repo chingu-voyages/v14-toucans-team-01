@@ -1,7 +1,10 @@
+import key from "./define.js";
+
 let vegetarianCheck = "";
 let veganCheck = "";
 let glutenFree = "";
 let recipe_id = sessionStorage.id;
+
 console.log(recipe_id);
   let URL = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/informationBulk?ids=${recipe_id}`;
 
@@ -9,7 +12,7 @@ console.log(recipe_id);
     "method": "GET",
     "headers": {
         "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-        "x-rapidapi-key": "d66508729fmshb62d7475c06e5f5p19fd55jsndb6ff2ea2b05"
+        "x-rapidapi-key": key
     }
 })
 .then((response) => {
