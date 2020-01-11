@@ -52,7 +52,6 @@ const createTitle = () =>{
         .newElement();
     const headerSize = new HtmlElements("h1", {"class" : ""}, titleLink, "Toucan's Recipes")
         .newElement();
-    createCarousel(titleDiv);
 };
 
 
