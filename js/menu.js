@@ -1,7 +1,7 @@
 
 const navbar = document.querySelector(".desktop-menu");
 const header = document.querySelector(".header");
-const carouselContainer= document.querySelector("#carousel");
+const carouselContainer= document.querySelector(".initial");
 const linkName = [
     {
         nameTag: "About Us",
@@ -47,11 +47,13 @@ const createMenu = (list) =>{
 };
 
 const createTitle = () =>{
-    const titleDiv = new HtmlElements("div", {"class": "title"}, header).newElement();
+    const titleDiv = new HtmlElements("div", {"class": "title"},header).newElement();
     const titleLink = new HtmlElements("a", {"href": "index.html"}, titleDiv)
         .newElement();
     const headerSize = new HtmlElements("h1", {"class" : ""}, titleLink, "Toucan's Recipes")
         .newElement();
+
+    carousel(header);
 };
 
 
