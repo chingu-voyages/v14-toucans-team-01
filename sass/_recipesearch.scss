@@ -1,0 +1,53 @@
+#ingredients {
+  @include sm {
+    text-align: center;
+    border: solid 1px orange;
+  }
+  @include lg {
+    width: 500px;
+    margin: 10px 200px;
+    background: orange;
+  }
+}
+
+.recipe-pic {
+  @include sm {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+#list {
+  padding: 0;
+}
+
+#list li {
+  @include sm {
+    display: flex;
+  }
+  @include md {
+    margin: 0 200px;
+  }
+}
+
+.recipe_title {
+  @include sm {
+    width: 120px;
+    padding: 5px;
+    font-size: 13px;
+    color: orange;
+    border: dashed 1px coral;
+  }
+
+  @include md {
+    width: 350px;
+    padding: 20px 10px;
+  }
+}
+
+.recipe-box {
+  @include sm {
+    display: flex;
+    margin: 5px;
+  }
+}

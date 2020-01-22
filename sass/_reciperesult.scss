@@ -1,0 +1,164 @@
+.steps {
+color: #db0038;
+font-size: 25px;
+text-align: center
+}
+
+#total {
+  @include sm {
+    margin: 0;
+    font-size: 17px;
+  }
+}
+.cooking-min {
+  display: flex;
+  margin: 0 30px;
+  @include md {
+    margin: 0 250px;
+  }
+  @include lg {
+    margin: 0 380px;
+  }
+}
+
+#prepMin {
+  @include sm {
+    color: #db0038;
+    font-size: 23px;
+  }
+}
+
+#totalMin {
+  @include sm {
+    color: #db0038;
+    font-size: 23px;
+  }
+}
+
+#recipe-image {
+  @include sm {
+    text-align: center;
+  }
+}
+
+#prep {
+  @include sm {
+    border-right-style: groove;
+    border-right-color: azure;
+    margin: 0 20px 0 30px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+}
+
+#recipe-name h1 {
+  @include sm {
+    text-align: center;
+    font-size: 25px;
+    color: #dc143c;
+  }
+}
+#recipe-imagepic {
+  @include sm {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#recipe-inst {
+  padding: 0;
+}
+
+#recipe-inst ul, li {
+    // counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+}
+
+#recipe-inst li {
+  display: flex;
+  @include sm {
+    padding-left: 0;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+}
+
+.inst-count {
+  @include sm {
+    color: #db0038;
+    padding-right: 20px;
+  }
+}
+// #recipe-inst li:before{ 
+//   @include sm {
+//     counter-increment: number;
+//     content: counter(number)".";
+//       /* 以下は自由に装飾... */
+//       padding-right: .5em;
+//       font-weight: bold;
+//       color: #db0038;
+//   }
+//   @include md {
+//     display:inline-block; 
+//     vertical-align: middle;
+//     /*以下白丸つくる*/
+//     content:'';
+//     width:1em;
+//     height: 1em;
+//     background: violet;
+//     border-radius: 50%;
+//     margin-right: 8px;
+//   }
+// }
+
+#ingredients-title {
+  @include sm {
+    color: #db0038;
+    font-size: 25px;
+    text-align: center;
+  }
+  @include md {
+    margin: 20px 260px;
+  }
+  @include lg {
+    margin: 20px 400px;
+  }
+}
+
+#recipe-ingredients {
+  padding-left: 10px;
+  @include md {
+    margin: 0 200px;
+  }
+  @include lg {
+    margin: 0 330px;
+  }
+}
+
+#recipe-ingredients  li {
+  position: relative;
+  list-style-type: none!important;/*ポチ消す*/
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  background: #ffdab9;
+  vertical-align: middle;
+  color: #505050;
+  border-radius: 15px 0px 0px 15px;/*左側の角丸く*/
+  @include md {
+    width: 270px;
+  }
+}
+
+#recipe-ingredientsul li::before {
+  display:inline-block; 
+  vertical-align: middle;
+  /*以下白丸つくる*/
+  content:'';
+  width:1em;
+  height: 1em;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+}

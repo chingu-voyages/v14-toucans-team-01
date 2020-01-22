@@ -1,0 +1,88 @@
+<!-- All the comments are for implementing with js. But we can uncomment the time to create our sass file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>ChinguRecipes</title>
+	<link rel="stylesheet" type="text/css" href="./sass/css/app.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+		<div id="container">
+				<header class="header">
+						<nav>
+								<div class="nav-bar">
+									<input id="nav-input" type="checkbox" class="nav-unshown">
+									<label id="nav-open" for="nav-input"><span></span></label>
+									<a href="index.html"><img src="./images/logo.png" class="logo-image"></a>
+									<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+									<div id="nav-content">
+										<ul class="links-container">
+											<li class="links"><a href="_aboutus.html">About Us</a></li>
+											<li class="links"><a href="_entrees.html">Entree</a></li>
+											<li class="links"><a href="_appetizer.html">Appetiser</a></li>
+											<li class="links"><a href="_mainCourse.html">Main Course</a></li>
+											<li class="links"><a href="_dessert.html">Dessert</a></li>
+											<li class="links"><a href="_wine.html">Wine</a></li>
+											<li class="links"><a href="_contact.html">Contact</a></li>
+										</ul>
+									</div>
+								</div>
+								<ul class="links-container desktop-menu">
+										
+								</ul>
+							</nav>
+					<!-- We can put a carousel in the background of the header -->
+					<!-- <div class="title">
+						<a href="index.html"><h1>Toucan's Recipes</h1></a>
+					</div> -->
+		<!-- 			<div class="search-container">
+						<form action="#" method="get">
+							<label for="search-input"></label>
+							<input type="search" id="search-input" class="search-input" placeholder="Search...">
+							<button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+						</form>
+					</div> -->
+				</header>
+				<div name="searchedResult" class="searchedResult"></div>
+			<div id="PairedwineList">
+				<h1>Recommended Paired Wine List Best3</h1>
+				<ul id="list">
+					
+				</ul>
+			</div>
+			<h3 class="winedescription">Wine Description:</h3>
+			<div name="paringText" id="pairingText"></div>
+			<div id="matchedWine">
+				<p id="wineName">Recommended Brand: </p>
+				<div id="machedWineName"></div>
+				<div id="matchedWineImage"></div>
+				<div class="wineprice">
+						<p id="winePrice">Wine Price: </p>
+						<div name="winePrice" id="winePriceTag"></div>
+				</div>
+			</div>
+			<footer>
+				<p>Follow us on...</p>
+				<ul class="sns">
+					<!-- <li class="social"><i class="fab fa-facebook facebook-icon"></i></li> -->
+					<li class="social"><a href="https://twitter.com/toucansrecipes"><i class="fab fa-twitter twitter-icon"></i></a></li>
+				</ul>
+				<div class="footer-menu">
+						<ul class="footer-ul">
+								<li class="footer-list"><a href="_aboutus.html">About us</a></li>
+								<li class="footer-list">||</li>
+								<li class="footer-list"><a href="_contact.html">Contact</a></li>
+						</ul>
+					</div>
+				<p>@toucans v-14</p>
+			</footer>
+	<script src="js/HtmlElements.js"></script>
+	<script src="js/Api.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/winesearch.js"></script>
+</body>
+</html>

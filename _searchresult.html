@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>ChinguRecipes</title>
+	<link rel="stylesheet" type="text/css" href="./sass/css/app.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+	<div id="container">
+		<header class="header">
+				<nav>
+						<div class="nav-bar">
+							<input id="nav-input" type="checkbox" class="nav-unshown">
+							<label id="nav-open" for="nav-input"><span></span></label>
+							<a href="index.html"><img src="./images/logo.png" class="logo-image"></a>
+							<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+							<div id="nav-content">
+								<ul class="links-container">
+									<li class="links"><a href="_aboutus.html">About Us</a></li>
+									<li class="links"><a href="_entrees.html">Entree</a></li>
+									<li class="links"><a href="_appetizer.html">Appetiser</a></li>
+									<li class="links"><a href="_mainCourse.html">Main Course</a></li>
+									<li class="links"><a href="_dessert.html">Dessert</a></li>
+									<li class="links"><a href="_wine.html">Wine</a></li>
+									<li class="links"><a href="_contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="links-container desktop-menu">
+								
+						</ul>
+					</nav>
+					<div class="menu-list">
+							<div class="menulist"> 
+								<a href="_entrees.html"><img src="./images/Entree.jpg" class="image"></a>
+								<div class="food-head-list"><a href="_entrees.html">Entree</a></div> 
+							</div>
+							<div class="menulist"> 
+								<a href="_appetizer.html"><img src="./images/Appetizer.jpg" class="image"></a>
+								<div class="food-head-list"><a href="_appetizer.html">Appetiser</a></div> 
+							</div>
+							<div class="menulist"> 
+								<a href="_mainCourse.html"><img src="./images/Steak.jpg" class="image"></a>
+								<div class="food-head-list"><a href="_mainCourse.html">Main Course</a></div> 
+							</div>
+							<div class="menulist"> 
+								<a href="_dessert.html"><img src="./images/Dessert.jpg" class="image"></a> 
+								<div class="food-head-list"><a href="_dessert.html">Dessert</a></div> 
+							</div>
+							<div class="menulist"> 
+								<a href="_wine.html"><img src="./images/Wine.jpg" class="image"></a>
+								<div class="food-head-list"><a href="_wine.html">Wine</a></div> 
+							</div>
+						</div>
+			<!-- We can put a carousel in the background of the header -->
+			<!-- <div class="title">
+				<a href="index.html"><h1>Toucan's Recipes</h1></a>
+			</div> -->
+		<div id="ingredients"></div>
+			<div id="recipe-list">
+				<ul id="list"></ul>
+			</div>
+			<footer>
+					<p>Follow us on...</p>
+					<ul class="sns">
+						<!-- <li class="social"><i class="fab fa-facebook facebook-icon"></i></li> -->
+						<li class="social"><a href="https://twitter.com/toucansrecipes"><i class="fab fa-twitter twitter-icon"></i></a></li>
+					</ul>
+					<div class="footer-menu">
+							<ul class="footer-ul">
+									<li class="footer-list"><a href="_aboutus.html">About us</a></li>
+									<li class="footer-list">||</li>
+									<li class="footer-list"><a href="_contact.html">Contact</a></li>
+							</ul>
+						</div>
+					<p>@toucans v-14</p>
+				</footer>
+	<script src="js/HtmlElements.js"></script>
+	<script src="js/Api.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/recipe_api.js"></script>
+	<script src="js/searchresult.js"></script>
+</body>
+</html>
